@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
       <div>Proyecto React</div>
+      <p>Cambios desde nueva rama</p>
     </>
   );
 }
