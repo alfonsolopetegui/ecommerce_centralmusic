@@ -11,21 +11,6 @@ export default function Home() {
       <p>Cambios desde nueva rama</p>
       <p>Ahora con nuevo nombre</p>
       <CardList />
-      {/* <h2> New Products </h2>
-
-<figure className='card-container'> 
-    <Image 
-        src="/Guitar.svg"
-        alt="Guitar"
-        className='card-image'
-        width={314}
-        height={260}
-        priority
-    />
-    <h5 className='card-title'> Brand name </h5>
-    <h5 className='card-price'> $2,995 </h5>
-    <p className='card-description'> Product description here </p>
-</figure> */}
     </>
   );
 }

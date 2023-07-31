@@ -12,7 +12,7 @@ const Card = (props) => {
       </div>
       <p className='card-description'> {props.data.description} </p>
       <div className='card-colors-available'> 
-      <p> {props.data.colorsavailable} colors available </p>
+      <p> {props.data.colorsavailable} colours available </p>
       </div>
     </figure>
     </>
