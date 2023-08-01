@@ -1,6 +1,7 @@
 import styles from "../styles/page.module.css";
 import Head from "next/head";
-import ButtonSmall from'./components/ButtonSmall';
+import CardList from "./components/molecules/CardList";
+import ButtonSmall from "./components/atoms/atoms/atoms/ButtonSmall";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div>
         <ButtonSmall />
       </div>
+      <CardList />
     </>
   );
 }

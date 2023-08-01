@@ -1,4 +1,14 @@
 /* :root {
+
+***COLORES PRINCIPALES****
+--primary-color: #AB0433;
+--button-color: #FF753A;
+--black: #252525;
+--first-grey: #505050;
+--second-grey: #767676;
+--white-grey: #EAEAEA;
+
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -105,3 +115,92 @@ a {
     color-scheme: dark;
   }
 } */
+
+
+/******* CARD STRUCTURE ******************/
+
+.card-container {
+  width: 328px;
+  height: 417px;
+  background-color: white;
+  /* border: solid black 0.2px; */
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* box-shadow: 0px 0px 14px 0px black; */
+  box-shadow: 0 0 15px #ddd;
+}
+
+.card-image {
+  width: 100%;
+  height: 260px;
+}
+
+.card-title-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 20px;
+  padding-top: 22px;
+
+}
+
+.card-title, .card-price {
+  font-size: 18px;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+
+.card-title {
+  padding-right: 40px;
+}
+
+
+.card-description {
+  font-size: 16px;
+  color: #767676;
+  margin-left: 23px;
+  padding-top: 5px;
+  font-weight: 500;
+
+}
+
+.card-colors-available{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #EAEAEA;
+  border-radius: 50px;
+  width: 115px;
+  height: 22px;
+  font-size: 12px;
+  margin-left: 23px;
+  margin-top: 20px;
+  margin-bottom: 30px ;
+  color: #505050;
+  font-weight: 600;
+
+}
+
+
+/******* CARD LIST ******************/
+
+
+.card-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.separated-line {
+  width: 14%;
+  background-color: #AB0433;
+  height: 2px;
+  margin-bottom: -10px;
+}
+
+.card-list-title{
+  color:#505050;
+}
