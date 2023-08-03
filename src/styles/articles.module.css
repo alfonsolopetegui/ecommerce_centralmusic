@@ -1,0 +1,142 @@
+/******* MOBILE ********/
+
+/******* Gallery ********/
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.galleryTitle {
+  font-family: "Work Sans", sans-serif;
+  color: #505050;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  align-self: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.galleryTitle::after {
+  content: "";
+  background-color: #AB0433;
+  position: absolute;
+  left: 0;
+  top: -25%;
+  width: 35%;
+  height: 3px;
+  left: 33%;
+}
+
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.articleContainerOne {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.articleContainerTwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+/******* article ********/
+.container {
+  max-width: 327px;
+  min-width: 327px;
+  height: 433px;
+  border-radius: 10px;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 70%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.titleContainer {
+  height: 30%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  gap: 4px;
+  margin: none;
+}
+
+.titleContainer.greyBack {
+  background: #EAEAEA;
+  color: #202020;
+}
+
+.title {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+}
+.title.colorChange {
+  color: #202020;
+}
+
+.subHead {
+  font-size: 18px;
+  line-height: 23.4px;
+  color: #c4c4c4;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.subHead.colorSubChange {
+  color: #767676;
+}
+
+
+/******* LAPTOP ********/
+
+@media (min-width: 1225px) {
+    .galleryContainer {
+      width: 90%;
+      }
+  .articleContainerOne {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .articleContainerTwo {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /******* article ********/
+  
+
+  .container {
+    max-width: none;
+    width: 100%;
+    height: 609px;
+  }
+
+  .imgContainer {
+    height: 80%;
+  }
+
+  .titleContainer {
+    height: 20%;
+  }
+
+  .item2 {
+    align-self: self-end;
+  }
+}
