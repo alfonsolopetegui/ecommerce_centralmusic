@@ -136,6 +136,7 @@ a {
   justify-content: space-around;
   /* box-shadow: 0px 0px 14px 0px black; */
   box-shadow: 0 0 15px #ddd;
+  
 }
 
 .card-image {
@@ -147,15 +148,16 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-right: 20px;
-  padding-top: 22px;
-
+  /* margin-right: 0px; */
+  margin-top: 30px;
+  margin-right: 40px;
 }
 
 .card-title, .card-price {
   font-size: 18px;
   margin-bottom: -20px;
   margin-top: -10px;
+  
 }
 
 .card-title {
@@ -166,8 +168,8 @@ a {
 .card-description {
   font-size: 16px;
   color: #767676;
-  margin-left: 23px;
-  padding-top: 5px;
+  margin-left: 13px;
+  padding-top: 20px;
   font-weight: 500;
 
 }
@@ -193,20 +195,53 @@ a {
 
 /******* CARD LIST ******************/
 
-
+.card-list-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card-list{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.card-list-2{
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 30px;
+}
+
+
 .separated-line {
   width: 14%;
   background-color: #AB0433;
   height: 2px;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
+  margin-top: 20px;
+  align-self: center;
 }
 
 .card-list-title{
   color:#505050;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ /********************LAPTOP**************************/
+
+ @media (min-width: 1225px) {
+  .card-list-2 {
+    grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    .separated-line {
+      width: 7%;
+      background-color: #AB0433;
+      height: 4px;
+      /* margin-bottom: -10px; */
+      margin-top: 20px;
+      align-self: center;
+    }
+
 }

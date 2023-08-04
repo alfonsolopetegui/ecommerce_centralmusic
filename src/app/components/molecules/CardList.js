@@ -31,16 +31,21 @@ const Tarjetas = [
 
 const CardList = () => {
   return (
-    <> 
-    <div className='card-list'> 
+    <>
+    <div className='card-list-header'> 
     <hr className='separated-line' />
     <h2 className='card-list-title'> New Products </h2>
+    </div>
+    <div className='card-list'> 
+    <div className='card-list-2'>
     {
         Tarjetas.map(tarjeta => <Card 
             key={tarjeta.id}
             data={tarjeta} />)
     }
     </div>
+    </div>
+    
     </>
 
 
