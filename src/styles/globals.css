@@ -225,7 +225,8 @@ a {
 .card-list-title{
   color:#505050;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 33px;
 }
 
  /********************LAPTOP**************************/
@@ -236,7 +237,7 @@ a {
     }
 
     .separated-line {
-      width: 7%;
+      width: 6%;
       background-color: #AB0433;
       height: 4px;
       /* margin-bottom: -10px; */
