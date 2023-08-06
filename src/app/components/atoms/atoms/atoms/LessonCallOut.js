@@ -1,20 +1,24 @@
+import React from 'react';
 import styles from "../../../../../styles/lesson.module.css";
+
+const info = {
+  img: "bgLessonCard.jpg",
+  title: "FREE GUITAR LESSONS!",
+  subTitle: "Purchase any guitar over $499.99 and recieve one-hour guitar lesson free.",
+  titleButton: "LEARN MORE",
+}
 
 const LessonCallOut = () => {
   return(
-    <div className="lesson-call-container">
-      <div>FREE GUITAR LESSONS!</div>
-      <div></div>
-      <button>LEARN MORE</button>
+    <div className={styles.container}>
+      <img className={styles.backgroundImage}  src={info.img} />
+      <div className={styles.textContainer}>
+        <div className={styles.textSubContainer}>
+          <div className={styles.textTitle}> {info.title} </div>
+          <div className={styles.textSubTitle}> {info.subTitle} </div>
+        </div>
+      </div>
+      <button id={styles.button} style={{boxShadow:"none !important"}}> {info.titleButton} </button>
     </div>
 )};
 export default LessonCallOut;
-
-//    <button style={{
-//  color: "white",
-// backgroundColor: "darkgreen",
-//  padding: "10px 20px",
-//  borderRadius: "5px",
-//  fontSize: "1.5rem",
-//  cursor: "pointer"
-//}}>Clickeame</button>);
