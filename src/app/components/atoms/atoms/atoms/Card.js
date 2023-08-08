@@ -1,10 +1,11 @@
 import React from 'react'
 
+
 const Card = (props) => {
   return (
     <>
     <figure className='card-container'> 
-      <img src={props.data.img} alt="guitar image" className='card-image'/>
+      <img src={props.data.img} alt="guitar image" className='card-image' />
       <div className='card-title-container'> 
       <h6 className='card-title'> {props.data.title} </h6>
       <h6 className='card-price'> {props.data.price} </h6>

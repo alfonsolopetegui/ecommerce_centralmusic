@@ -1,0 +1,167 @@
+/* STYLE Populard card*/
+
+
+.popularCardConteiner {
+    width: 400px;
+    height: 400px;
+    background-color:white;
+    /* border: solid black 0.2px; */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* box-shadow: 0px 0px 14px 0px black; */
+    box-shadow: 0 0 15px #ddd;
+  }
+  
+  .popularImg {
+    width: 90%;
+    height: 240px;
+    margin-left: 6%;
+    margin-top: -20px;
+  }
+  
+  .popularTitleConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .popularTitle, .popularPrice {
+    font-size: 18px;
+    margin-bottom: -20px;
+    margin-top: -50px;
+  
+  }
+  
+  .popularTitle {
+    padding-right: 30%;
+   
+  }
+  
+  .popularDescription {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 14px;
+    color: #767676;
+  
+    font-weight: 500;
+    margin-top: -80px;
+  }
+  
+  /* Popular product list */
+  
+  .popularListHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popularList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popularList2{
+    display: grid;
+    grid-template-columns: 1fr;  
+    gap: 30px;
+  }
+  
+  .separatedLine {
+    width: 14%;
+    background-color: #AB0433;
+    height: 2px;
+    /* margin-bottom: -10px; */
+    margin-top: 20px;
+    align-self: center;
+  }
+  
+  
+  .popularListTitle{
+    color:#505050;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 33px;
+  }
+  
+  .colorsAvailable{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 50px;
+    width: 115px;
+    height: 22px;
+    font-size: 12px;
+    margin-left: 23px;
+    margin-top: -40px;
+    margin-bottom: -10px ;
+    color: #505050;
+    font-weight: 600;
+  
+  }
+  
+  /* Carrousel */
+  
+  .carrouselConteiner {
+    width: fixed;
+    height: auto;
+    padding: 88px;
+    gap: 16px;
+    background: #ECECEC;
+  }
+  
+  .carrousel{
+   width: 1264px;
+   height: 417px;
+   margin-left: 35px;
+  
+  }
+  
+  .carrouselTitle {
+    width: 227px;
+    height: 56px;
+    margin-left: 45%;
+    font-size: 33px;
+    color: #505050;
+  }
+  
+  @media (min-width: 1225px) {
+    .popularList2 {
+      
+      grid-template-columns: 1fr 1fr 1fr ;
+      display: none;
+      }
+    
+    .popularListTitle {
+      display: none;
+      }
+    
+    .popularConteiner {
+        display: none;
+  
+      }
+      
+  
+      .separatedLine {
+        width: 6%;
+        background-color: #AB0433;
+        height: 4px;
+        /* margin-bottom: -10px; */
+        margin-top: 20px;
+        align-self: center;
+      }
+      
+  }
+  
+  @media (max-width: 1225px) {
+    .carrouselConteiner {
+    
+      display: none;
+      }
+  
+    }
