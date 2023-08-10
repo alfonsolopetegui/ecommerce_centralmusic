@@ -2,16 +2,14 @@
 
 
 .popularCardConteiner {
-    width: 400px;
-    height: 400px;
+    width: 328px;
+    height: 417px;
     background-color:white;
     /* border: solid black 0.2px; */
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* box-shadow: 0px 0px 14px 0px black; */
-    box-shadow: 0 0 15px #ddd;
   }
   
   .popularImg {
@@ -35,7 +33,7 @@
   }
   
   .popularTitle {
-    padding-right: 30%;
+    padding-right: 15%;
    
   }
   
@@ -110,7 +108,7 @@
   .carrouselConteiner {
     width: fixed;
     height: auto;
-    padding: 88px;
+    padding: 90px;
     gap: 16px;
     background: #ECECEC;
   }
@@ -118,18 +116,19 @@
   .carrousel{
    width: 1264px;
    height: 417px;
-   margin-left: 35px;
+   margin: 40px;
   
   }
   
   .carrouselTitle {
     width: 227px;
     height: 56px;
-    margin-left: 45%;
+    margin-left: 40%;
     font-size: 33px;
     color: #505050;
   }
   
+
   @media (min-width: 1225px) {
     .popularList2 {
       
@@ -163,5 +162,6 @@
     
       display: none;
       }
+      
   
     }
