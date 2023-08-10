@@ -21,7 +21,7 @@ const Carrousel = () => {
     <div className={styles.carrouselConteiner}>
     <h2 className={styles.carrouselTitle}> Popular Finds </h2>
     <div className={styles.carrousel}>
-        <Slider {...settings}>
+        <Slider {...settings} className= {styles.slider}>
         {
                 Product.map(Product => <PopularCard 
                 key={Product.id}
