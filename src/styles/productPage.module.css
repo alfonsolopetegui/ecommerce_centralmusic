@@ -1,0 +1,131 @@
+/*******MOBILE *********/
+
+.productWrapper {
+  /* width: 100%; */
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.productContainer {
+  /* padding-top: 40px; */
+  padding: 10px;
+  background-color: white;
+  min-width: 327px;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.imageContainer {
+  min-width: 327px;
+  height: 400px;
+  background: url(https://www.heavenimagenes.com/heavencommerce/0c3d234c-03b5-48ac-85a1-10e80752be67/images/v2/FENDER/1608201401585595_01_medium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 360px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  /* background-position: center; */
+}
+
+.dataContainer {
+  min-width: 327px;
+  /* padding: 20px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dataTop {
+  flex-basis: 40%;
+  margin-bottom: 20px;
+}
+
+.dataTitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.priceContainer h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 35px;
+}
+
+.dataBottom {
+  flex-basis: 60%;
+  margin-bottom: 25px;
+}
+
+.dataFragment {
+  margin-bottom: 10px;
+}
+.dataFragment h4 {
+  color: rgb(46, 105, 46);
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.dataFragment p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+
+/******** LAPTOP ***********/
+
+@media (min-width: 1225px) {
+  .productWrapper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .productContainer {
+    /* padding-top: 40px; */
+    width: 80%;
+    height: 80vh;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .imageContainer {
+    width: 65%;
+    height: 100%;
+    background: url(https://www.heavenimagenes.com/heavencommerce/0c3d234c-03b5-48ac-85a1-10e80752be67/images/v2/FENDER/1608201401585595_01_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    /* background-position: center; */
+  }
+
+  .dataContainer {
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .dataTitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <ButtonSmall />
+        <ButtonSmall text='Clickeame' />
       </div>
       <CardList />
       <ArticlesGallery />

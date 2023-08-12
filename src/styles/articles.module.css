@@ -2,8 +2,8 @@
 
 /******* Gallery ********/
 .wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .galleryTitle {
@@ -19,7 +19,7 @@
 
 .galleryTitle::after {
   content: "";
-  background-color: #AB0433;
+  background-color: #ab0433;
   position: absolute;
   left: 0;
   top: -25%;
@@ -42,11 +42,11 @@
 }
 
 .articleContainerTwo {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    margin-top: 30px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
 /******* article ********/
 .container {
   max-width: 327px;
@@ -78,7 +78,7 @@
 }
 
 .titleContainer.greyBack {
-  background: #EAEAEA;
+  background: #eaeaea;
   color: #202020;
 }
 
@@ -105,13 +105,12 @@
   color: #767676;
 }
 
-
 /******* LAPTOP ********/
 
 @media (min-width: 1225px) {
-    .galleryContainer {
-      width: 90%;
-      }
+  .galleryContainer {
+    width: 90%;
+  }
   .articleContainerOne {
     grid-template-columns: 1fr 1fr;
   }
@@ -120,7 +119,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   /******* article ********/
-  
 
   .container {
     max-width: none;

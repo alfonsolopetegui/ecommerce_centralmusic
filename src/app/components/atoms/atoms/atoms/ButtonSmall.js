@@ -1,4 +1,5 @@
-const ButtonSmall = () => {
+const ButtonSmall = (props) => {
+  const { text } = props;
   return(
     <button style={{
       color: "white",
@@ -7,6 +8,6 @@ const ButtonSmall = () => {
       borderRadius: "5px",
       fontSize: "1.5rem",
       cursor: "pointer"
-    }}>Clickeame</button>);
+    }}>{text}</button>);
 };
 export default ButtonSmall;
