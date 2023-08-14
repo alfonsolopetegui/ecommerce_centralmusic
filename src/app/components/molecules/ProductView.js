@@ -1,25 +1,18 @@
-import ButtonSmall from "@/app/components/atoms/atoms/atoms/ButtonSmall";
-import styles from "../../../styles/productView.module.css";
-import { GuitarsInfo } from "@/app/components/data/GuitarsInfo";
+import ButtonSmall from "../atoms/atoms/atoms/ButtonSmall";
+import styles from "../../../styles/productView.module.css"
 
-const GuitarView = ({ params }) => {
-  const { id } = params;
-  
- const guitar = GuitarsInfo[id -1]
-  
-
+const ProductView = () => {
   return (
     <div className={styles.productWrapper}>
       <div className={styles.productContainer}>
-        <div className={styles.imageContainer} style={{backgroundImage: `url(${guitar.image})`}}></div>
+        <div className={styles.imageContainer}></div>
         <div className={styles.dataContainer}>
           <div className={styles.dataTop}>
             <h1 className={styles.dataTitle}>
-              {guitar.title}
+              Fender Stratocaster American Special Sunb Electric Guitar
             </h1>
-            <p>{guitar.description}</p>
             <div className={styles.priceContainer}>
-              <h3>{guitar.price}</h3>
+              <h3>U$s 1,699</h3>
               <p>save up to 20%</p>
             </div>
           </div>
@@ -53,4 +46,4 @@ const GuitarView = ({ params }) => {
   );
 };
 
-export default GuitarView;
+export default ProductView;

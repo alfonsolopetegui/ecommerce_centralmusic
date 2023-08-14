@@ -23,10 +23,10 @@
   .imageContainer {
     min-width: 327px;
     height: 400px;
-    background: url(https://www.heavenimagenes.com/heavencommerce/0c3d234c-03b5-48ac-85a1-10e80752be67/images/v2/FENDER/1608201401585595_01_medium.jpg);
+    /* background: url(https://www.heavenimagenes.com/heavencommerce/0c3d234c-03b5-48ac-85a1-10e80752be67/images/v2/FENDER/1608201401585595_01_medium.jpg); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 360px;
+    background-size:contain;
     border: 1px solid rgba(128, 128, 128, 0.3);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -72,7 +72,7 @@
     margin-bottom: 10px;
   }
   .dataFragment h4 {
-    color: rgb(46, 105, 46);
+    color: #ab0433;
     font-weight: 800;
     line-height: 25px;
   }
@@ -101,10 +101,10 @@
     .imageContainer {
       width: 65%;
       height: 100%;
-      background: url(https://www.heavenimagenes.com/heavencommerce/0c3d234c-03b5-48ac-85a1-10e80752be67/images/v2/FENDER/1608201401585595_01_medium.jpg);
+      /* background: url(https://www.heavenimagenes.com/heavencommerce/0c3d234c-03b5-48ac-85a1-10e80752be67/images/v2/FENDER/1608201401585595_01_medium.jpg); */
       background-repeat: no-repeat;
       background-position: center;
-      background-size: auto;
+      background-size:contain;
       border: 1px solid rgba(128, 128, 128, 0.3);
       border-top-left-radius: 0;
       border-top-right-radius: 0;

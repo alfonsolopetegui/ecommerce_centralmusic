@@ -136,7 +136,7 @@ a {
   justify-content: space-around;
   /* box-shadow: 0px 0px 14px 0px black; */
   box-shadow: 0 0 15px #ddd;
-  cursor: pointer;
+
 }
 
 .card-image {
@@ -164,6 +164,17 @@ a {
   padding-right: 40px;
 }
 
+/***Agregado por alfonso****/
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: -20px;
+  margin-top: -10px;
+  color: black;
+  font-weight: 700;
+}
+/***Agregado por alfonso****/
 
 .card-description {
   font-size: 16px;
