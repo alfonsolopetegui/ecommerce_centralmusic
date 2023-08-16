@@ -46,7 +46,7 @@ const GuitarView = ({ params }) => {
               </p>
             </div>
           </div>
-          <ButtonSmall text="Add to Cart" />
+          <ButtonSmall text="Add to Cart" background="#ab0433"/>
         </div>
       </div>
     </div>

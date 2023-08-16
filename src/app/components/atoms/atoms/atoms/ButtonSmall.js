@@ -1,9 +1,9 @@
 const ButtonSmall = (props) => {
-  const { text } = props;
+  const { text, background } = props;
   return(
     <button style={{
       color: "white",
-      backgroundColor: "#ab0433",
+      backgroundColor: `${background}`,
       padding: "10px 20px",
       borderRadius: "5px",
       border: "none",
