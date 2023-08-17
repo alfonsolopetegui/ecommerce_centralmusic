@@ -1,22 +1,22 @@
 import React from 'react'
 import PopularCard from '../atoms/atoms/atoms/PopularCard'
 import styles from "../../../styles/carrousel.module.css";
-import { Product } from '../data/PopularListInfo';
+import { StorageInfo } from '../data/storageInfo';
 
 
-const PopularList = () => {
+const Storage = () => {
     return (
         <>
             <div className={styles.popularListHeader}>
                 <hr className={styles.separatedLine} />
-                <h2 className={styles.popularListTitle}> Popular Finds </h2>
+                <h2 className={styles.storageTitle}> Storage </h2>
             </div>
-            <div className={styles.popularList}>
-                <div className={styles.popularList2}>
+            <div className={styles.storageList}>
+                <div className={styles.storageList2}>
                     {
-                        Product.map(Product => <PopularCard
-                            key={Product.id}
-                            data={Product}
+                       StorageInfo.map( StorageInfo => <PopularCard
+                            key={StorageInfo.id}
+                            data={StorageInfo}
                         />)
                     }
                 </div>
@@ -26,4 +26,4 @@ const PopularList = () => {
     )
 }
 
-export default PopularList
+export default Storage
