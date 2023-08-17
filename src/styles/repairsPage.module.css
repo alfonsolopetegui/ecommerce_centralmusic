@@ -1,0 +1,149 @@
+/******* REPAIRS PAGE ******************/
+/******* MOBILE ********/
+@media only screen and (min-width: 375px) and (max-width: 759px){
+  .title{
+    display: flex;
+    justify-content: center;
+    width: 327px;
+    height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFF;
+    
+
+    color: var(--505050, #505050);
+    text-align: center;
+
+    /* H4 */
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .redLine{
+    margin-top: 17px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .texto{
+    display: flex;
+    width: 310px;
+    height: 165px;
+
+    flex-shrink: 0;
+
+    color: #505050;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: Work Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .subtexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 296px;
+    height: 54px;
+    flex-shrink: 0;
+
+    color: #000;
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .form{
+    margin-top: 45px;
+    display: flex;
+    width: 343px;
+    height: 943px;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+  }
+  .formTitle {
+    width: 295px;
+    height: 28px;
+    gap: 2px;
+
+    align-self: stretch;
+    color: #AB0433;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+  }
+  .file{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    width: 295px;
+    height: 72px;
+  }
+  .label{
+    width: 295px;
+    height: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    align-self: stretch;
+    color: #242426;
+    font-style: normal;
+  }
+  .input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 295px;
+    height: 44px;
+
+    padding: 8px 16px 8px 16px;
+    gap: 16px;
+
+    color: #242426;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    flex: 1 0 0;
+  }
+  .line{
+    width: 295px;
+    height: 1px;
+    background: #E2E4E5;
+    border: 1px solid #E2E4E5
+  }
+}
