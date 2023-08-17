@@ -164,6 +164,17 @@ a {
   padding-right: 40px;
 }
 
+/***Agregado por alfonso****/
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: -20px;
+  margin-top: -10px;
+  color: black;
+  font-weight: 700;
+}
+/***Agregado por alfonso****/
 
 .card-description {
   font-size: 16px;
