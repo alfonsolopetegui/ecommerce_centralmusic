@@ -10,7 +10,6 @@ import Carrousel from "./components/molecules/Carrousel";
 
 
 
-
 export default function Home() {
   return (
     <>
@@ -19,6 +18,7 @@ export default function Home() {
       <PopularList />
       <Carrousel />
       <ArticlesGallery />
+ 
     </>
   );
 }
