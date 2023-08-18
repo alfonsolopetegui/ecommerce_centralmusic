@@ -10,18 +10,20 @@ import Carrousel from "./components/molecules/Carrousel";
 import Header from "./components/atoms/atoms/atoms/Header";
 import Home from "./components/atoms/atoms/atoms/Home";
 
-
 export default function Index() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Home />
-      <LessonCallOut />
-      <CardList />
+      <div className={styles.lessonContainer}>
+        <LessonCallOut />
+      </div>
+      <div className={styles.cardListContainer}>
+        <CardList />
+      </div>
       <PopularList />
       <Carrousel />
       <ArticlesGallery />
-      
     </>
   );
 }

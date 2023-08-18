@@ -5,7 +5,7 @@ const Home = () => {
     return (
 
     <div style={{
-        backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Grass_at_a_lawn_with_morning_dew_02.jpg")`,
+        backgroundImage: `url("https://images.pexels.com/photos/2350327/pexels-photo-2350327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")`,
         height: "100vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
