@@ -1,0 +1,17 @@
+/*****Home****/
+
+.home-title {
+    position:absolute;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+}
+.home-title > h1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 30px ;
+}
+.home-title > h1 >span {
+    color: rgb(184, 184, 184);
+    font-size: 5rem;
+}

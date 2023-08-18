@@ -8,12 +8,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carrousel from "./components/molecules/Carrousel";
 import Header from "./components/atoms/atoms/atoms/Header";
+import Home from "./components/atoms/atoms/atoms/Home";
 
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Header />
+      <Home />
       <LessonCallOut />
       <CardList />
       <PopularList />
