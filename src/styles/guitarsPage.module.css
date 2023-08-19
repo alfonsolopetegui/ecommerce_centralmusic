@@ -1,3 +1,7 @@
+.guitarsPageWrapper {
+    padding-top: 90px;
+}
+
 .guitarContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

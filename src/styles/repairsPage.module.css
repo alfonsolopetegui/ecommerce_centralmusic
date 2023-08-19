@@ -1,6 +1,7 @@
 /******* REPAIRS PAGE ******************/
 /******* MOBILE ********/
 @media only screen and (min-width: 375px) and (max-width: 759px){
+
   .title{
     display: flex;
     justify-content: center;
@@ -145,5 +146,11 @@
     height: 1px;
     background: #E2E4E5;
     border: 1px solid #E2E4E5
+  }
+}
+
+@media (min-width: 1200px) {
+  .repairsPageWrapper {
+    padding-top: 90px;
   }
 }
