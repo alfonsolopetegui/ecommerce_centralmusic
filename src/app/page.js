@@ -21,8 +21,10 @@ export default function Index() {
       <div className={styles.cardListContainer}>
         <CardList />
       </div>
-      <PopularList />
-      <Carrousel />
+      <div className={styles.carouselWrapper}>
+        <PopularList />
+        <Carrousel />
+      </div>
       <ArticlesGallery />
     </>
   );

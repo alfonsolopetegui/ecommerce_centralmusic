@@ -124,7 +124,7 @@
   .carrouselTitle {
     width: 227px;
     height: 56px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     font-size: 33px;
     color: #505050;
   }
@@ -153,6 +153,15 @@
 
 /********************LAPTOP**************************/
   @media (min-width: 1225px) {
+    .carrouselConteiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .popularListHeader {
+      position: relative;
+    }
     .popularList2 {
       display: none;
       }
@@ -172,6 +181,8 @@
         /* margin-bottom: -10px; */
         margin-top: 20px;
         align-self: center;
+        position: absolute;
+        top: 50px;
       }
 
     .storageList {
