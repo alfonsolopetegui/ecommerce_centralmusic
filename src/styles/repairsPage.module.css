@@ -1,25 +1,33 @@
 /******* REPAIRS PAGE ******************/
-.title{
+.repairsPageWrapper {
+  padding-top: 8%;
+}
+.title {
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
   align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
   color: var(--505050, #505050);
   text-align: center;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
+  color: #505050;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 33px;
+  font-weight: 700;
 }
-.redLine{
+.redLine {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
 }
-.texto{
+.texto {
   display: flex;
   flex-shrink: 0;
   color: #505050;
@@ -32,7 +40,7 @@
   font-family: Work Sans;
   font-style: normal;
 }
-.subtexto{
+.subtexto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +53,7 @@
   font-family: Montserrat;
   font-style: normal;
 }
-.form{
+.form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -53,121 +61,121 @@
   margin-left: auto;
   margin-right: auto;
 }
-.formTitle{
+.formTitle {
   align-self: stretch;
-  color: #AB0433;
+  color: #ab0433;
   font-family: Poppins;
   font-style: normal;
 }
-.file{
+.file {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.label{
+.label {
   font-family: Poppins;
   text-align: left;
   align-self: stretch;
   color: #242426;
   font-style: normal;
 }
-.inputContent{
+.inputContent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.subContent{
+.subContent {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
 }
-.input{
+.input {
   color: #242426;
   font-family: Roboto;
   font-style: normal;
   border: none;
 }
-.line{
-  background: #E2E4E5;
+.line {
+  background: #e2e4e5;
 }
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.contactText{
+.contactText {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.contactTitle{
+.contactTitle {
   align-self: stretch;
-  color: #AB0433;
+  color: #ab0433;
   font-family: Poppins;
   font-style: normal;
   text-align: left;
 }
-.contactSubtitle{
+.contactSubtitle {
   align-self: stretch;
-  color: #575F6E;
+  color: #575f6e;
   font-family: Poppins;
   font-style: normal;
   text-align: left;
 }
-.subContent1{
+.subContent1 {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
 }
-.icon1{
+.icon1 {
   flex-shrink: 0;
 }
-.inputContact{
+.inputContact {
   font-family: Roboto;
   text-align: left;
   color: #242426;
   font-style: normal;
   border: none;
 }
-.file1{
+.file1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  align-self: stretch;  
-}
-.file1Title{
   align-self: stretch;
-  color: #AB0433;
+}
+.file1Title {
+  align-self: stretch;
+  color: #ab0433;
   font-family: Poppins;
   font-style: normal;
   text-align: left;
 }
-.subContent2{
+.subContent2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.inputContent2{
+.inputContent2 {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
   border: none;
 }
-.buttonContent{
+.buttonContent {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
 }
-.button{
-  background-color: #AB0433;
-  color: #FFF;
+.button {
+  background-color: #ab0433;
+  color: #fff;
   font-family: Work Sans;
   text-align: center;
   font-style: normal;
@@ -176,9 +184,8 @@
 /******* NOTEBOOK ********/
 
 /******* MOBILE ********/
-@media only screen and (min-width: 375px) and (max-width: 759px){
-
-  .title{
+@media only screen and (min-width: 375px) and (max-width: 759px) {
+  .title {
     width: 327px;
     height: 31px;
     gap: 4px;
@@ -187,10 +194,10 @@
     font-weight: 700;
     line-height: 130%;
   }
-  .redLine{
+  .redLine {
     margin-top: 17px;
   }
-  .texto{
+  .texto {
     width: 310px;
     height: 165px;
 
@@ -198,7 +205,7 @@
     font-weight: 700;
     line-height: 120%;
   }
-  .subtexto{
+  .subtexto {
     width: 296px;
     height: 54px;
 
@@ -206,7 +213,7 @@
     font-weight: 400;
     line-height: 150%; /* 24px */
   }
-  .form{
+  .form {
     margin-top: 45px;
     width: 343px;
     height: 834px;
@@ -222,12 +229,12 @@
     font-weight: 600;
     line-height: 28px; /* 140% */
   }
-  .file{
+  .file {
     gap: 8px;
     width: 295px;
     height: 72px;
   }
-  .label{
+  .label {
     width: 295px;
     height: 20px;
     font-size: 14px;
@@ -235,41 +242,41 @@
     line-height: 20px;
     letter-spacing: 0em;
   }
-  .inputContent{
+  .inputContent {
     width: 295px;
     height: 44px;
   }
-  .subContent{
+  .subContent {
     width: 295px;
     height: 44px;
     padding: 8px 16px 8px 16px;
     gap: 16px;
   }
-  .input{
+  .input {
     width: 263px;
-    height: 28px;    
+    height: 28px;
 
     font-size: 18px;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
     flex: 1 0 0;
   }
-  .line{
+  .line {
     width: 295px;
     height: 1px;
-    border: 1px solid #E2E4E5
+    border: 1px solid #e2e4e5;
   }
-  .contact{
+  .contact {
     width: 295px;
     height: 194px;
     gap: 32px;
   }
-  .contactText{
+  .contactText {
     width: 295px;
     height: 42px;
     gap: 2px;
   }
-  .contactTitle{
+  .contactTitle {
     font-size: 18px;
     font-weight: 600;
     line-height: 24px; /* 133.333% */
@@ -277,7 +284,7 @@
     height: 24px;
     letter-spacing: 0em;
   }
-  .contactSubtitle{
+  .contactSubtitle {
     font-size: 12px;
     font-weight: 300;
     line-height: 16px; /* 133.333% */
@@ -285,17 +292,17 @@
     height: 16px;
     letter-spacing: 0em;
   }
-  .subContent1{
+  .subContent1 {
     width: 295px;
     height: 44px;
     padding: 8px 0px 8px 0px;
     gap: 16px;
   }
-  .icon1{
+  .icon1 {
     width: 24px;
     height: 24px;
   }
-  .inputContact{
+  .inputContact {
     width: 255px;
     height: 28px;
     font-size: 18px;
@@ -304,12 +311,12 @@
     letter-spacing: 0em;
     flex: 1 0 0;
   }
-  .file1{
+  .file1 {
     gap: 8px;
     width: 295px;
     height: 112px;
   }
-  .file1Title{
+  .file1Title {
     font-size: 20px;
     font-weight: 600;
     line-height: 20px; /* 100% */
@@ -317,17 +324,17 @@
     height: 60px;
     letter-spacing: 0em;
   }
-  .subContent2{
+  .subContent2 {
     width: 295px;
     height: 44px;
   }
-  .inputContent2{
+  .inputContent2 {
     height: 44px;
     gap: 16px;
     width: 295px;
     padding: 8px 16px 8px 16px;
   }
-  .button{
+  .button {
     width: 201px;
     height: 56px;
     flex-shrink: 0;

@@ -1,3 +1,12 @@
 .accesoriesPageWrapper {
-    padding-top: 90px;
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.accesoriesPageTitle {
+    color:#505050;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 33px; 
 }
