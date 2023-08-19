@@ -227,3 +227,17 @@
     transform: rotate(0deg);
   }
 } */
+
+.lessonContainer {
+  position: absolute;
+  top: 740px;
+  left: 210px;
+  z-index: 100;
+}
+
+.carouselWrapper {
+  margin-top: 50px;
+}
+.cardListContainer {
+  margin-top: 200px;
+}

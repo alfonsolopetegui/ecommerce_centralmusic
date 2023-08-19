@@ -1,6 +1,9 @@
+import styles from '../../styles/accesoriesPage.module.css'
+
 const AccesoriesPage = () => {
   return (
-    <div>Accesories Page</div>
+
+    <div className={styles.accesoriesPageWrapper}>Accesories Page</div>
   )
 }
 

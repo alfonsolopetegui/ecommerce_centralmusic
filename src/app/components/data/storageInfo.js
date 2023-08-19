@@ -2,7 +2,7 @@ export const StorageInfo = [
     {
         id: 1,
         img: "case1.jpg",
-        title:"Tweed electric guitar bag",
+        title:"Tweed guitar bag",
         price: "$68",
         text:"Fender's 610 Series gig bag is a stylish and affordable way to keep your electric guitar safe while traveling",
         colorsavailable: "2",
@@ -11,7 +11,7 @@ export const StorageInfo = [
     {
         id: 2,
         img: "case2.jpg",
-        title:"Donner electric guitar bag",
+        title:"Donner guitar bag",
         price: "$40",
         text:"The Donner premium electric guitar gig bag based on guitar physical structure to design.",
         colorsavailable: "1",
@@ -35,7 +35,7 @@ export const StorageInfo = [
     {
         id: 5,
         img: "case5.jpg",
-        title:"Eitmos electric guitar bag" ,
+        title:"Eitmos guitar bag" ,
         price: "$60",
         text:"The exclusive self-designed 39' guitar bag, with a stylish and practical air-cushioned shoulder strap", 
         colorsavailable: "3",        

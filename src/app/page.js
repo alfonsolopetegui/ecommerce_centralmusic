@@ -7,18 +7,25 @@ import PopularList from "./components/molecules/PopularList";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carrousel from "./components/molecules/Carrousel";
+import Header from "./components/atoms/atoms/atoms/Header";
+import Home from "./components/atoms/atoms/atoms/Home";
 
-
-
-export default function Home() {
+export default function Index() {
   return (
     <>
-      <LessonCallOut />
-      <CardList />
-      <PopularList />
-      <Carrousel />
+      {/* <Header /> */}
+      <Home />
+      <div className={styles.lessonContainer}>
+        <LessonCallOut />
+      </div>
+      <div className={styles.cardListContainer}>
+        <CardList />
+      </div>
+      <div className={styles.carouselWrapper}>
+        <PopularList />
+        <Carrousel />
+      </div>
       <ArticlesGallery />
- 
     </>
   );
 }

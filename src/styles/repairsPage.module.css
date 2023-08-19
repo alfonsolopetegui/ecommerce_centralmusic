@@ -177,6 +177,7 @@
 
 /******* MOBILE ********/
 @media only screen and (min-width: 375px) and (max-width: 759px){
+
   .title{
     width: 327px;
     height: 31px;
@@ -258,6 +259,7 @@
     height: 1px;
     border: 1px solid #E2E4E5
   }
+<<<<<<< HEAD
   .contact{
     width: 295px;
     height: 194px;
@@ -341,5 +343,12 @@
     gap: 10px;
 
     border-radius: 32px;
+=======
+}
+
+@media (min-width: 1200px) {
+  .repairsPageWrapper {
+    padding-top: 90px;
+>>>>>>> dcf5c0ba8410c926114dc34ce2414fd627237845
   }
 }
