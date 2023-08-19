@@ -6,7 +6,7 @@ const GuitarsPage = () => {
   return (
     <>
       <div className={styles.guitarsPageWrapper}>
-        <h3>Guitars</h3>
+        <h3 className={styles.titleGuitarPages}>Guitars</h3>
         <div className={styles.guitarContainer}>
           {GuitarsInfo.map((guitar) => {
             return <Card key={guitar.id} data={guitar} />;
