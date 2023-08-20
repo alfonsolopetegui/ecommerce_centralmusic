@@ -51,7 +51,7 @@ const GuitarView = ({ params }) => {
             </div>
           </div>
           {/* <button onClick={()=>addToCart(id)}> Agregar </button>     ver por que tira error */}
-          <ButtonSmall />
+          <ButtonSmall texto={'Add to Cart'}/>
         </div>
       </div>
     </div>
