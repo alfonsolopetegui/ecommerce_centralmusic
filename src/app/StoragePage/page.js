@@ -1,6 +1,6 @@
 import React from 'react'
 import PopularCard from '../components/atoms/atoms/atoms/PopularCard';
-import styles from "../../styles/carrousel.module.css";
+import styles from "../../styles/storage.module.css";
 import { StorageInfo } from '../components/data/storageInfo';
 
 
