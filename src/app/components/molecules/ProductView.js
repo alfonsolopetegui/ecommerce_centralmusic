@@ -1,7 +1,7 @@
 import ButtonSmall from "../atoms/atoms/atoms/ButtonSmall";
 import styles from "../../../styles/productView.module.css"
 
-const ProductView = () => {
+const ProductView = (id) => {
   return (
     <div className={styles.productWrapper}>
       <div className={styles.productContainer}>
@@ -39,7 +39,7 @@ const ProductView = () => {
               </p>
             </div>
           </div>
-          <ButtonSmall text="Add to Cart" />
+          <button onClick={()=>addToCart(id)}> Agregar </button>     
         </div>
       </div>
     </div>

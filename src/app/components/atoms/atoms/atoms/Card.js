@@ -13,13 +13,13 @@ const Card = (props) => {
       <h6 className='card-price'> {props.data.price} </h6>
       </div>
       <p className='card-description'> {props.data.description} </p>
-      <div className='card-colors-available'> 
-      <p> {props.data.colorsavailable} colours available </p>
-      
-      </div>
+      {/* <div className='card-colors-available'> 
+      {/* <p> {props.data.colorsavailable} colours available </p> */}
+{/*       
+      </div> */}
       <div className='card-button-container'> 
       <br />
-      <button className='card-button'> ADD TO CART </button>
+      <ButtonSmall texto="See Product"/>      
       </div>
     </figure>
     </>

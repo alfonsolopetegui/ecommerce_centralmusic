@@ -1,6 +1,9 @@
 import ButtonSmall from "@/app/components/atoms/atoms/atoms/ButtonSmall";
 import styles from "../../../styles/productView.module.css";
 import { GuitarsInfo } from "@/app/components/data/GuitarsInfo";
+import CartItem from "@/app/components/atoms/atoms/CartItem";
+
+
 
 const GuitarView = ({ params }) => {
   const { id } = params;
@@ -9,6 +12,7 @@ const GuitarView = ({ params }) => {
   
 
   return (
+  
     <div className={styles.productWrapper}>
       <div className={styles.productContainer}>
         <div className={styles.imageContainer} style={{backgroundImage: `url(${guitar.image})`}}></div>
@@ -46,7 +50,8 @@ const GuitarView = ({ params }) => {
               </p>
             </div>
           </div>
-          <ButtonSmall text="Add to Cart" />
+          {/* <button onClick={()=>addToCart(id)}> Agregar </button>     ver por que tira error */}
+          <ButtonSmall />
         </div>
       </div>
     </div>

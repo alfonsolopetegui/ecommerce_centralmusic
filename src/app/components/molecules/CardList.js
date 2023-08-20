@@ -54,21 +54,3 @@ const CardList = () => {
 
 export default CardList
 
-// <>
-// <section> 
-// {
-//     Destinos.map(destino => <Card 
-//       key={destino.id}
-//       data={destino} 
-//       />) // 34:00
-// }
-// <style jsx>
-// {`
-// section {
-//   display: flex;
-//   justify-content: space-around;
-// }
-// `}
-// </style> 
-// </section>
-// </>

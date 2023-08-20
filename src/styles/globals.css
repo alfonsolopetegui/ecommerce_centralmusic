@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 /* :root {
@@ -127,15 +128,21 @@ a {
 
 .card-container {
   width: 328px;
-  height: 500px;
+  height: 520px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* border: #505050 solid; */
+  border-radius: 20px;
+  border-width: 0.2px;
+/*
   background-color: white;
   /* border: solid black 0.2px; */
-  border-radius: 30px;
+  /* border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   /* box-shadow: 0px 0px 14px 0px black; */
-  box-shadow: 0 0 15px #ddd;
+  /* box-shadow: 0 0 15px #ddd; */ 
 
 }
 
@@ -150,7 +157,7 @@ a {
   justify-content: space-around;
   /* margin-right: 0px; */
   margin-top: 30px;
-  margin-right: 40px;
+  margin-right: 40px
 }
 
 .card-title, .card-price {
@@ -169,21 +176,28 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
 }
 
-.card-button {
-  width: 100px;
-  height: 55px;
-  background-color: #FF753A;
-  font-size: 16px;
-  border: 2px solid transparent;
-  border-radius: 20%;
+.button-small {
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 50%;
+  height: 45;
+  background-color: #FF753A;
+  border-color: transparent;
+  border-radius: 30px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 
+.button-small:hover {
+  background-color:#AB0433;
+
+}
 /***Agregado por alfonso****/
 
 a {
@@ -201,7 +215,7 @@ a {
   font-size: 16px;
   color: #767676;
   margin-left: 13px;
-  padding-top: 20px;
+  margin-top: 10px;
   font-weight: 500;
 
 }
@@ -217,7 +231,7 @@ a {
   height: 22px;
   font-size: 12px;
   margin-left: 23px;
-  margin-bottom: 40px;
+  margin-bottom: 4px;
   margin-top: 40px;
   color: #505050;
   font-weight: 600;
