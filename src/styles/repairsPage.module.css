@@ -1,0 +1,353 @@
+/******* REPAIRS PAGE ******************/
+.repairsPageWrapper {
+  padding-top: 8%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: var(--505050, #505050);
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  color: #505050;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 33px;
+  font-weight: 700;
+}
+.redLine {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.texto {
+  display: flex;
+  flex-shrink: 0;
+  color: #505050;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Work Sans;
+  font-style: normal;
+}
+.subtexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formTitle {
+  align-self: stretch;
+  color: #ab0433;
+  font-family: Poppins;
+  font-style: normal;
+}
+.file {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.label {
+  font-family: Poppins;
+  text-align: left;
+  align-self: stretch;
+  color: #242426;
+  font-style: normal;
+}
+.inputContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.subContent {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.input {
+  color: #242426;
+  font-family: Roboto;
+  font-style: normal;
+  border: none;
+}
+.line {
+  background: #e2e4e5;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.contactTitle {
+  align-self: stretch;
+  color: #ab0433;
+  font-family: Poppins;
+  font-style: normal;
+  text-align: left;
+}
+.contactSubtitle {
+  align-self: stretch;
+  color: #575f6e;
+  font-family: Poppins;
+  font-style: normal;
+  text-align: left;
+}
+.subContent1 {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.icon1 {
+  flex-shrink: 0;
+}
+.inputContact {
+  font-family: Roboto;
+  text-align: left;
+  color: #242426;
+  font-style: normal;
+  border: none;
+}
+.file1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.file1Title {
+  align-self: stretch;
+  color: #ab0433;
+  font-family: Poppins;
+  font-style: normal;
+  text-align: left;
+}
+.subContent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.inputContent2 {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  border: none;
+}
+.buttonContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  background-color: #ab0433;
+  color: #fff;
+  font-family: Work Sans;
+  text-align: center;
+  font-style: normal;
+}
+
+/******* NOTEBOOK ********/
+
+/******* MOBILE ********/
+@media only screen and (min-width: 375px) and (max-width: 759px) {
+  .title {
+    width: 327px;
+    height: 31px;
+    gap: 4px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .redLine {
+    margin-top: 17px;
+  }
+  .texto {
+    width: 310px;
+    height: 165px;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .subtexto {
+    width: 296px;
+    height: 54px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .form {
+    margin-top: 45px;
+    width: 343px;
+    height: 834px;
+    padding: 0px 24px;
+    gap: 32px;
+  }
+  .formTitle {
+    width: 295px;
+    height: 28px;
+    gap: 2px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+  }
+  .file {
+    gap: 8px;
+    width: 295px;
+    height: 72px;
+  }
+  .label {
+    width: 295px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+  .inputContent {
+    width: 295px;
+    height: 44px;
+  }
+  .subContent {
+    width: 295px;
+    height: 44px;
+    padding: 8px 16px 8px 16px;
+    gap: 16px;
+  }
+  .input {
+    width: 263px;
+    height: 28px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    flex: 1 0 0;
+  }
+  .line {
+    width: 295px;
+    height: 1px;
+    border: 1px solid #e2e4e5;
+  }
+  .contact {
+    width: 295px;
+    height: 194px;
+    gap: 32px;
+  }
+  .contactText {
+    width: 295px;
+    height: 42px;
+    gap: 2px;
+  }
+  .contactTitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+    width: 295px;
+    height: 24px;
+    letter-spacing: 0em;
+  }
+  .contactSubtitle {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px; /* 133.333% */
+    width: 295px;
+    height: 16px;
+    letter-spacing: 0em;
+  }
+  .subContent1 {
+    width: 295px;
+    height: 44px;
+    padding: 8px 0px 8px 0px;
+    gap: 16px;
+  }
+  .icon1 {
+    width: 24px;
+    height: 24px;
+  }
+  .inputContact {
+    width: 255px;
+    height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    flex: 1 0 0;
+  }
+  .file1 {
+    gap: 8px;
+    width: 295px;
+    height: 112px;
+  }
+  .file1Title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px; /* 100% */
+    width: 295px;
+    height: 60px;
+    letter-spacing: 0em;
+  }
+  .subContent2 {
+    width: 295px;
+    height: 44px;
+  }
+  .inputContent2 {
+    height: 44px;
+    gap: 16px;
+    width: 295px;
+    padding: 8px 16px 8px 16px;
+  }
+  .button {
+    width: 201px;
+    height: 56px;
+    flex-shrink: 0;
+    top: 1283px;
+    left: 87px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+
+    padding: 16px 24px;
+    gap: 10px;
+
+    border-radius: 32px;
+  }
+}

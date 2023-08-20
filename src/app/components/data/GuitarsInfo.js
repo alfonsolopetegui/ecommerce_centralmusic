@@ -12,7 +12,7 @@ export const GuitarsInfo = [
     {
         id: 2, 
         img: "Guitar2.svg",
-        image: "https://w7.pngwing.com/pngs/463/243/png-transparent-squier-standard-stratocaster-electric-guitar-fender-stratocaster-sunburst-fender-standard-stratocaster-guitar-guitar-accessory-string-instrument-acoustic-electric-guitar.png",
+        image: "https://us.123rf.com/450wm/martijnmulder/martijnmulder0708/martijnmulder070800011/1477060-fender-stratocaster-guitarra-el%C3%A9ctrica-logo-eliminado-separados-por-un-fondo-blanco.jpg",
         title: "Parquer ST100",    
         price: "$3,000",
         description: "Phin is a folk instrument of the Isarn Thailand. That is unique, conveying fun and can play harmoniously with international music",
@@ -21,7 +21,7 @@ export const GuitarsInfo = [
     {
         id: 3, 
         img: "Guitar3.svg",
-        image: "https://w7.pngwing.com/pngs/532/853/png-transparent-fender-jaguar-fender-musical-instruments-corporation-electric-guitar-fender-jazzmaster-fingerboard-electric-guitar-guitarist-musician-guitar-accessory.png",
+        image: "https://bairesrocks.vteximg.com.br/arquivos/ids/201859-1500-1500/635864-MLA40970397581_032020-F.jpg?v=637313060659830000",
         title: "Newen",    
         price: "$1,500",
         description: "Squier Classic Vibe 70s Stratocaster Electric Guitar, Walnut, Laurel Fingerboard",

@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
+/***reset****/
+.reset{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*
+.body{
+    font-family: rgb(255, 0, 0);
+    overflow: fixed;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+*/
+/***Boton****/
+/*
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 0;
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    width: 200px;
+    transition: all 0.3s;
+}
+.btn:hover{ 
+    background-color: rgb(255, 0, 0);
+}
+
+*/
+/**NAVBAR y HEADER*/
+.user{
+    display: flex;
+    width: 5px;
+    height: 35px;
+    position: absolute;
+    left: 93%;
+
+} 
+.carrito{
+    display: flex;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    left: 90%;
+    
+} 
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    width: 100%;
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 999999;
+    /* background-color: rgba(0, 0, 0, 0.336); */
+    background-color: rgba(0, 0, 0, 0.737);
+    height: 90px;
+   
+}
+.nav-active{
+    background-color: #00000070;
+    height: 5rem;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;    
+    padding: 20px;
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+    column-gap: 40px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    right: 500px; 
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+      justify-content: center;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      position: static; 
+      right: auto; 
+    }
+  
+    .menu li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+.navigation >.menu > .menu-item> a {
+    color: white;
+    transition: all 0.3s;
+    text-decoration: none;
+ 
+    
+}
+.navigation > .menu> .menu-item> a:hover {
+    color: rgb(71, 68, 68);  
+}
+/***logo*****/
+.nav-container> .logo{
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+}
+
+.nav-container> .logo a {
+    margin: 0;
+}
+
+.logo > img{
+    width: 30px;
+    margin-right:20px;
+}
+
+.logo-name{
+    color: white;
+    font-size: 2.7rem; 
+    text-decoration: none;
+    list-style: none;
+}

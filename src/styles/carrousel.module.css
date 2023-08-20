@@ -1,4 +1,4 @@
-/* STYLE Populard card*/
+/****** STYLE POPULAR CARD ******/
 
 
 .popularCardConteiner {
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0 0 15px #ddd;
   }
   
   .popularImg {
@@ -49,7 +50,7 @@
     margin-top: -80px;
   }
   
-  /* Popular product list */
+  /****** PROPOLAR PRODUCT LIST ******/
   
   .popularListHeader {
     display: flex;
@@ -103,7 +104,7 @@
   
   }
   
-  /* Carrousel */
+  /****** CARROUSEL ******/
   
   .carrouselConteiner {
     width: fixed;
@@ -123,16 +124,53 @@
   .carrouselTitle {
     width: 227px;
     height: 56px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     font-size: 33px;
     color: #505050;
   }
-  
 
+   /****** STORAGE ******/
+
+   .storageList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .storageList2 {
+    display: grid;
+    grid-template-columns: 1fr;  
+    gap: 30px;
+   }
+
+   .storageTitle {
+   color:#505050;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   font-size: 33px;
+   }
+
+   .StorageHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 1%;
+   }
+
+
+/********************LAPTOP**************************/
   @media (min-width: 1225px) {
+    .carrouselConteiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .popularListHeader {
+      position: relative;
+    }
     .popularList2 {
-      
-      grid-template-columns: 1fr 1fr 1fr ;
       display: none;
       }
     
@@ -142,26 +180,43 @@
     
     .popularConteiner {
         display: none;
-  
       }
       
-  
-      .separatedLine {
+    .separatedLine {
         width: 6%;
         background-color: #AB0433;
         height: 4px;
         /* margin-bottom: -10px; */
         margin-top: 20px;
         align-self: center;
+        position: absolute;
+        top: 50px;
       }
+
+    .storageList {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+       }
+    
+    .storageList2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 90px;
+       }
+    
+
+
       
   }
   
+/******* MOBILE ********/
   @media (max-width: 1225px) {
     .carrouselConteiner {
-    
       display: none;
       }
       
-  
     }
+
+

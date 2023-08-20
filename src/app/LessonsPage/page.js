@@ -1,7 +1,11 @@
+import styles from "../../styles/lessonsPage.module.css";
+
 const LessonsPage = () => {
   return (
-    <div>Lessons Page</div>
-  )
-}
+    <div className={styles.lessonsPageWrapper}>
+      <h1 className={styles.lessonsPageTitle}>Lessons</h1>
+    </div>
+  );
+};
 
 export default LessonsPage;

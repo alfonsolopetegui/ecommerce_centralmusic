@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import styles from "../../../../../styles/lesson.module.css";
+import { useRouter } from 'next/navigation';
 
 const info = {
   img: "bgLessonCard.jpg",
@@ -9,6 +11,13 @@ const info = {
 }
 
 const LessonCallOut = () => {
+
+  const router = useRouter();
+
+  const handleBtn = () => {
+    router.push('/LessonsPage')
+  }
+  
   return(
     <div className={styles.container}>
       {/* <img className={styles.backgroundImage}  src={info.img} /> */}
@@ -18,7 +27,7 @@ const LessonCallOut = () => {
           <div className={styles.textSubTitle}> {info.subTitle} </div>
         </div>
       </div>
-      <button id={styles.button} style={{boxShadow:"none !important"}}> {info.titleButton} </button>
+      <button id={styles.button} style={{boxShadow:"none !important"}} onClick={handleBtn}> {info.titleButton} </button>
     </div>
 )};
 export default LessonCallOut;

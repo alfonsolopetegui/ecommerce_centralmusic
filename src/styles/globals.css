@@ -275,6 +275,13 @@ a {
   font-size: 33px;
 }
 
+/******* CARROUSEL ******************/
+
+.slick-slide>div {
+  margin:0 45px;
+}
+
+
  /********************LAPTOP**************************/
 
  @media (min-width: 1225px) {

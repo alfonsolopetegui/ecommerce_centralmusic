@@ -39,7 +39,7 @@
   align-self: stretch;
   color: var(--white, #FFF);
   text-align: center;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -48,7 +48,7 @@
   align-self: stretch;
   color: #FFF;
   text-align: center;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 149%;
@@ -60,12 +60,14 @@
   gap: 10px;
   color: #FFF;
   text-align: center;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
   background-color: #FF753A;
   box-shadow: none !important;
+  border: none;
+  cursor: pointer;
 }
 
 
