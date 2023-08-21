@@ -1,3 +1,4 @@
+"use client";
 import styles from "../styles/page.module.css";
 import CardList from "./components/molecules/CardList";
 import LessonCallOut from "./components/atoms/atoms/atoms/LessonCallOut";
@@ -54,7 +55,6 @@ export default function Index() {
         <Carrousel />
       </div>
       <ArticlesGallery />
-      <ShoppingCart />
     </>
   );
 }

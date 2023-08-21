@@ -1,26 +1,37 @@
+"use client";
 import ButtonSmall from "@/app/components/atoms/atoms/atoms/ButtonSmall";
 import styles from "../../../styles/productView.module.css";
-import { GuitarsInfo } from "@/app/components/data/GuitarsInfo";
-import CartItem from "@/app/components/atoms/atoms/CartItem";
-
-
+import { useContext } from "react";
+import DataContext from "@/app/Context/DataContext";
 
 const GuitarView = ({ params }) => {
+  const { data, cart, setCart, addToCart, updateFromCart } = useContext(DataContext);
   const { id } = params;
-  
- const guitar = GuitarsInfo[id -1]
-  
+
+  const guitar = data[id - 1];
+
+  const addProduct = () => {
+    const productRepeat = cart.find((item) => item.id === guitar.id);
+
+    if (productRepeat) {
+      // guitar.quantity += 1;
+      updateFromCart(guitar, "increase")
+    } else {
+      // setCart([...cart, guitar]);
+      addToCart(guitar);
+    }
+  };
 
   return (
-  
     <div className={styles.productWrapper}>
       <div className={styles.productContainer}>
-        <div className={styles.imageContainer} style={{backgroundImage: `url(${guitar.image})`}}></div>
+        <div
+          className={styles.imageContainer}
+          style={{ backgroundImage: `url(${guitar.image})` }}
+        ></div>
         <div className={styles.dataContainer}>
           <div className={styles.dataTop}>
-            <h1 className={styles.dataTitle}>
-              {guitar.title}
-            </h1>
+            <h1 className={styles.dataTitle}>{guitar.title}</h1>
             <p>{guitar.description}</p>
             <div className={styles.priceContainer}>
               <h3>{guitar.price}</h3>
@@ -51,7 +62,7 @@ const GuitarView = ({ params }) => {
             </div>
           </div>
           {/* <button onClick={()=>addToCart(id)}> Agregar </button>     ver por que tira error */}
-          <ButtonSmall texto={'Add to Cart'}/>
+          <ButtonSmall texto={"Add to Cart"} handler={addProduct} />
         </div>
       </div>
     </div>
