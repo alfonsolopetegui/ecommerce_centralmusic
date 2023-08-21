@@ -131,7 +131,7 @@ function repairsPage() {
                 <input
                   className={styles.input}
                   placeholder="1122334455"
-                  type="number"
+                  type="text"
                 ></input>
               </div>
               <line className={styles.line}></line>
