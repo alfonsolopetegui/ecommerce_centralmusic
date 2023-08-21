@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../../../../styles/carrousel.module.css";
+import styles from "../../../../../styles/popularCard.module.css";
 
 
 const PopularCard = (props) => {
@@ -11,8 +11,8 @@ const PopularCard = (props) => {
         <h3 className={styles.popularPrice}>{props.data.price} </h3>
       </div>
       <p className={styles.popularDescription}>{props.data.text}</p>
-      <div className={styles.colorsAvailable}>
-        <p> {props.data.colorsavailable} colours available </p>
+      <div className={styles.buttonConteiner}>
+        <button className={styles.button}>Add To Cart</button>
       </div>
     </figure>
   )
