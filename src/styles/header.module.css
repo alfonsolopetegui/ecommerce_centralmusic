@@ -99,6 +99,10 @@ li{
     position: relative;
     right: 500px; 
   }
+
+  .nav-container a {
+    margin: 0;
+  }
   
   @media (max-width: 768px) {
     .navigation {
@@ -127,7 +131,7 @@ li{
     
 }
 .navigation > .menu> .menu-item> a:hover {
-    color: rgb(71, 68, 68);  
+    color: rgb(143, 134, 134);  
 }
 /***logo*****/
 .nav-container> .logo{

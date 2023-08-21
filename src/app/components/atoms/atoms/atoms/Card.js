@@ -9,7 +9,7 @@ const Card = (props) => {
     <figure className='card-container'> 
       <img src={props.data.img} alt="guitar image" className='card-image' />
       <div className='card-title-container'> 
-      <Link href={'/GuitarsPage/[id]'} as={`/GuitarsPage/${props.data.id}`}> {props.data.title} </Link>
+      <h6 className='card-title'> {props.data.title} </h6>
       <h6 className='card-price'> {props.data.price} </h6>
       </div>
       <p className='card-description'> {props.data.description} </p>
@@ -17,10 +17,12 @@ const Card = (props) => {
       {/* <p> {props.data.colorsavailable} colours available </p> */}
 {/*       
       </div> */}
+      <Link href={'/GuitarsPage/[id]'} as={`/GuitarsPage/${props.data.id}`}> 
       <div className='card-button-container'> 
       <br />
       <ButtonSmall texto="See Product"/>      
       </div>
+      </Link>
     </figure>
     </>
   )

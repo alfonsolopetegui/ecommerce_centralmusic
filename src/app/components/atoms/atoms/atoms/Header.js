@@ -1,8 +1,13 @@
-import React from "react";
+"use client"
+import React, { useContext } from "react";
 import styles from "../../../../../styles/header.module.css";
 import Link from "next/link";
+import { TotalItems } from "./TotalItems";
+import DataContext from "@/app/Context/DataContext";
 
 const Header = () => {
+  const { cart } = useContext(DataContext);
+
   const menuItems = [
     { text: "Guitars", href: "/GuitarsPage" },
     { text: "Accessories", href: "/AccesoriesPage" },
@@ -28,9 +33,10 @@ const Header = () => {
             <img src={"User.png"} alt="User" />
           </div>
 
-          <div href="#" className={styles["carrito"]}>
+          <Link href={"/Cart"} className={styles["carrito"]}>
             <img src={"carrito.png"} alt="Carrito" />
-          </div>
+          </Link>
+          {cart.length > 0 && <TotalItems />}
 
           <nav className={styles["navigation"]}>
             <ul className={styles["menu"]}>
