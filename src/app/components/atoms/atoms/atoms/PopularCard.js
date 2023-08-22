@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../../../../../styles/popularCard.module.css";
 
 
+
 const PopularCard = (props) => {
   return (
     <figure className={styles.popularCardConteiner}>
