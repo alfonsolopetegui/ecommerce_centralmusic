@@ -15,3 +15,13 @@
     color: rgb(184, 184, 184);
     font-size: 5rem;
 }
+
+@media screen and (min-width: 375px) and (max-width: 759px){
+    .home-title > h1 {
+        font-size: 4rem;
+    }
+
+    .home-title > h1 >span{
+        font-size: 4rem;
+    }
+}

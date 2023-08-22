@@ -5,6 +5,15 @@
   /* overflow-x: hidden; */
 }
 
+body{
+  overflow-x: hidden;
+}
+
+@media screen  and (min-width: 375px) and (max-width: 759px){
+  body { overflow-x: hidden;}
+
+}
+
 /* :root {
 
 ***COLORES PRINCIPALES****

@@ -6,13 +6,21 @@
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   flex-shrink: 0;
   gap: 16px;
   border-radius: 10px;
   background-image: linear-gradient(rgba(171, 4, 51, 0.8), rgba(171, 4, 51, 0.8));
   background-blend-mode: darken, normal; 
+  margin-top: 600px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 759px)
+{
+  .container {  margin-top: 800px;
+  }
+
 }
 .backgroundImage{
   position: absolute;

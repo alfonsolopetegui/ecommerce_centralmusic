@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "../../../../../styles/home.module.css";
+import LessonCallOut from './LessonCallOut';
 
 const Home = () => {
     return (
@@ -18,6 +19,11 @@ const Home = () => {
                 <span>attached</span>
                 </h1>
             </div>
+     <div style={{
+        display: "flex",
+        flexDirection: "flex-end"}}> 
+     <LessonCallOut />
+    </div>           
     </div>
 
 )

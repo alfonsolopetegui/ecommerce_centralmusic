@@ -7,7 +7,6 @@ import PopularList from "./components/molecules/PopularList";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carrousel from "./components/molecules/Carrousel";
-import ShoppingCart from "./components/molecules/ShoppingCart";
 import Home from "./components/atoms/atoms/atoms/Home";
 
 const Db = [
@@ -45,7 +44,7 @@ export default function Index() {
     <>
       <Home />
       <div className={styles.lessonContainer}>
-        <LessonCallOut />
+        {/* <LessonCallOut /> */}
       </div>
       <div className={styles.cardListContainer}>
         <CardList />

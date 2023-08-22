@@ -34,7 +34,7 @@ const GuitarView = ({ params }) => {
             <h1 className={styles.dataTitle}>{guitar.title}</h1>
             <p>{guitar.description}</p>
             <div className={styles.priceContainer}>
-              <h3>{guitar.price}</h3>
+              <h3>${guitar.price}</h3>
               <p>save up to 20%</p>
             </div>
           </div>
