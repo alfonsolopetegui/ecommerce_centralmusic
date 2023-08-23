@@ -33,53 +33,80 @@
   ],
   "storageInfo": [
     {
-      "id": 1,
+      "id": 4,
       "img": "case1.jpg",
       "title": "Tweed guitar bag",
-      "price": "$68",
-      "text": "Fender's 610 Series gig bag is a stylish and affordable way to keep your electric guitar safe while traveling",
-      "colorsavailable": "2"
-    },
-    {
-      "id": 2,
-      "img": "case2.jpg",
-      "title": "Donner guitar bag",
-      "price": "$40",
-      "text": "The Donner premium electric guitar gig bag based on guitar physical structure to design.",
-      "colorsavailable": "1"
-    },
-    {
-      "id": 3,
-      "img": "case3.jpg",
-      "title": "Fender 405 guitar bag",
-      "price": "$45",
-      "text": "Fender's F405 Series gig bag is a stylish and affordable way to keep your electric guitar safe while traveling",
-      "colorsavailable": "2"
-    },
-    {
-      "id": 4,
-      "img": "case4.jpg",
-      "title": "Deluxe model case",
-      "price": "$230",
-      "text": "Transport and store your Jazzmaster or Jaguar guitar in style with this deluxe molded case",
-      "colorsavailable": "5"
+      "price": "68",
+      "description": "Fender's 610 Series gig bag is a stylish and affordable way to keep your electric guitar safe while traveling",
+      "colorsavailable": "2",
+      "quantity": 1
     },
     {
       "id": 5,
-      "img": "case5.jpg",
-      "title": "Eitmos guitar bag",
-      "price": "$60",
-      "text": "The exclusive self-designed 39' guitar bag, with a stylish and practical air-cushioned shoulder strap",
-      "colorsavailable": "3"
+      "img": "case2.jpg",
+      "title": "Donner guitar bag",
+      "price": "40",
+      "description": "The Donner premium electric guitar gig bag based on guitar physical structure to design.",
+      "colorsavailable": "1",
+      "quantity": 1
     },
     {
       "id": 6,
+      "img": "case3.jpg",
+      "title": "Fender 405 guitar bag",
+      "price": "45",
+      "description": "Fender's F405 Series gig bag is a stylish and affordable way to keep your electric guitar safe while traveling",
+      "colorsavailable": "2",
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "img": "case4.jpg",
+      "title": "Deluxe model case",
+      "price": "230",
+      "description": "Transport and store your Jazzmaster or Jaguar guitar in style with this deluxe molded case",
+      "colorsavailable": "5",
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "img": "case5.jpg",
+      "title": "Eitmos guitar bag",
+      "price": "60",
+      "description": "The exclusive self-designed 39' guitar bag, with a stylish and practical air-cushioned shoulder strap",
+      "colorsavailable": "3",
+      "quantity": 1
+    },
+    {
+      "id": 9,
       "img": "case6.jpg",
       "title": "The clasic case",
-      "price": "$100",
-      "text": "Travel back in time with this modern interpretation of our iconic poodle case.",
-      "colorsavailable": "2"
+      "price": "100",
+      "description": "Travel back in time with this modern interpretation of our iconic poodle case.",
+      "colorsavailable": "2",
+      "quantity": 1
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 2,
+      "img": "Guitar2.svg",
+      "image": "https://http2.mlstatic.com/D_Q_NP_726510-MLA48762441708_012022-O.webp",
+      "title": "Parquer ST100",
+      "price": "3000",
+      "description": "Phin is a folk instrument of the Isarn Thailand. That is unique, conveying fun and can play harmoniously with international music",
+      "colorsavailable": "2",
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "img": "Guitar3.svg",
+      "image": "https://www.worldofmusic.com.au/wp-content/uploads/2021/05/Fender-Player-Jaguar-Capri-Orange-Front.jpg",
+      "title": "Newen",
+      "price": "1500",
+      "description": "Squier Classic Vibe 70s Stratocaster Electric Guitar, Walnut, Laurel Fingerboard",
+      "colorsavailable": "1",
+      "quantity": 1
+    }
+  ]
 }

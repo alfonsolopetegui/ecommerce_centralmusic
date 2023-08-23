@@ -1,9 +1,27 @@
 import Link from 'next/link'
 import React from 'react'
 import ButtonSmall from './ButtonSmall'
-
+import { useContext } from "react";
+import DataContext from "@/app/Context/DataContext";
 
 const Card = (props) => {
+ const { data, cart, setCart, addToCart, updateFromCart } = useContext(DataContext);
+  const { id } = props.data;
+
+  const guitar = data[id - 1];
+
+  const addProduct = () => {
+    const productRepeat = cart.find((item) => item.id === guitar.id);
+
+    if (productRepeat) {
+      // guitar.quantity += 1;
+      updateFromCart(guitar, "increase")
+    } else {
+      // setCart([...cart, guitar]);
+      addToCart(guitar);
+    }
+  };
+  
   return (
     <>
     <figure className='card-container'> 
@@ -17,12 +35,12 @@ const Card = (props) => {
       {/* <p> {props.data.colorsavailable} colours available </p> */}
 {/*       
       </div> */}
-      <Link href={'/GuitarsPage/[id]'} as={`/GuitarsPage/${props.data.id}`}> 
+     
       <div className='card-button-container'> 
       <br />
-      <ButtonSmall texto="See Product"/>      
+      <ButtonSmall texto={"Add to Cart"} handler={addProduct}/>      
       </div>
-      </Link>
+
     </figure>
     </>
   )

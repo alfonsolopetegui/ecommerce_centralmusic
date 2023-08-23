@@ -10,7 +10,7 @@ import { Loader } from "../components/atoms/atoms/atoms/Loader";
 // import { CartItemCounter } from "./CartItemCounter";
 
 const CartElements = () => {
-  const { data, cart, setCart, deleteFromCart } = useContext(DataContext);
+  const { data, cart, setCart, deleteFromCart, storage } = useContext(DataContext);
   const [modalUno, setModalUno] = useState(false);
 
   const deleteProduct = (id) => {
@@ -36,7 +36,7 @@ const CartElements = () => {
         cart.map((product) => {
           return (
             <div className={styles.cartContent} key={product.id}>
-              <img src={product.image} alt="producto" />
+              <img src={product.img} alt="producto" />
               <h3 className={styles.productName}>{product.title}</h3>
               <CartCounter product={product} />
               <h4 className={styles.price}>

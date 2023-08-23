@@ -14,7 +14,7 @@ const GuitarsPage = () => {
         <h3 className={styles.titleGuitarPages}>Guitars</h3>
         <div className={styles.guitarContainer}>
           {data.map((guitar) => {
-            return <Card key={guitar.id} data={guitar} />;
+            return <Card key={guitar.id} data={guitar}/>;
           })}
         </div>
       </div>

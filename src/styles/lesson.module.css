@@ -47,7 +47,7 @@
   align-self: stretch;
   color: var(--white, #FFF);
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif; */
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -56,19 +56,19 @@
   align-self: stretch;
   color: #FFF;
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif; */
   font-style: normal;
   font-weight: 600;
   line-height: 149%;
 }
-#button{
+.button{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   color: #FFF;
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  /* font-family: "Work Sans", sans-serif; */
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
