@@ -45,7 +45,7 @@ li{
 
 */
 /**NAVBAR y HEADER*/
-.user{
+/* .user{
     display: flex;
     width: 5px;
     height: 35px;
@@ -71,20 +71,19 @@ li{
     transition: all 0.5s;
     position: fixed;
     z-index: 999999;
-    /* background-color: rgba(0, 0, 0, 0.336); */
     background-color: rgba(0, 0, 0, 0.737);
     height: 90px;
    
 }
 .nav-active{
-    background-color: #00000070;
+    background-color: rgba(0, 0, 0, 0.439);
     height: 5rem;
 }
 
 
 .navigation {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
+    justify-content: center; 
     align-items: center;    
     padding: 20px;
     color: white;
@@ -133,9 +132,9 @@ li{
 }
 .navigation > .menu> .menu-item> a:hover {
     color: rgb(143, 134, 134);  
-}
+} */
 /***logo*****/
-.nav-container> .logo{
+/* .nav-container> .logo{
     display: flex;
     align-items:center;
     text-decoration: none;
@@ -155,4 +154,4 @@ li{
     font-size: 2.7rem; 
     text-decoration: none;
     list-style: none;
-}
+} */

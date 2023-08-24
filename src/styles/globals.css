@@ -132,6 +132,163 @@ a {
   }
 } */
 
+/******* NAVBAR MOBILE ********/
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  width: 100%;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 999999;
+  /* background-color: rgba(0, 0, 0, 0.336); este es el que hay que comentar */
+  background-color: rgba(0, 0, 0, 0.737);
+  height: 90px;
+}
+
+.nav-container {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: space-between;
+  padding: 0px 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-container > .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 300;
+}
+
+.navbar_ {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.navbar_Links {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(128, 128, 128);
+  transition: 0.3s;
+}
+
+.navbar_ > .navbar_Links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 40px;
+}
+
+.cart-icon {
+  margin-left: 300px;
+}
+
+.user-icon {
+  margin-right: 20px;
+}
+
+.cart-icon, .user-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav_toggle {
+  display: none;
+}
+ /*** NAVBAR MOBILE ***/
+@media (max-width: 768px){
+  .navbar_ {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 300;
+  } 
+  .cart-icon {
+    margin-left: 0px;
+  }
+  
+  .user-icon {
+    margin-right: 0px;
+    margin-bottom: 75px;
+  }
+  .cart-icon, .user-icon {
+    display: flex;
+    align-items: center;
+  }
+  .navbar_Links {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.737);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    height: 565px;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .navbar_Links.open {
+    transform: translateX(0) ;
+  }
+
+  .nav_toggle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 30px;
+  }
+  
+  .nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin-bottom: 5px;
+    margin-left: 200px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+  .nav_toggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav_toggle.open > span:nth-child(2) {
+    display: none;
+  }
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+}
 
 /******* CARD STRUCTURE ******************/
 
