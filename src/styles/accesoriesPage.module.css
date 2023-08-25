@@ -1,6 +1,9 @@
 .accesoriesPageWrapper {
-    padding: 8% 0;
-    text-align: center;
+
+    padding-top: 95px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .accesoriesPageTitle {
