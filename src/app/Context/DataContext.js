@@ -6,7 +6,7 @@ export const DataContext = createContext();
 
 const baseURL = "http://localhost:5000/products";
 const cartURL = "http://localhost:5000/cart";
-const storageURL = "http://localhost:5000/storageInfo"; 
+const storageURL = "http://localhost:5000/storageInfo";
 
 export const DataContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
@@ -24,17 +24,17 @@ export const DataContextProvider = ({ children }) => {
   };
 
   const updateFromCart = async (prod, increase) => {
-    const {id} = prod;
+    const { id } = prod;
     const options = {
       method: "PUT",
       headers: { "content-type": "application/json" },
-      data: JSON.stringify({...prod, quantity: increase ? prod.quantity += 1 : prod.quantity -= 1}),
+      data: JSON.stringify({ ...prod, quantity: increase ? prod.quantity += 1 : prod.quantity -= 1 }),
     };
     await axios(`${cartURL}/${id}`, options);
   };
 
   const deleteFromCart = async (prod) => {
-    const {id} = prod;
+    const { id } = prod;
     const options = {
       method: "DELETE",
       headers: { "content-type": "application/json" },
@@ -57,7 +57,7 @@ export const DataContextProvider = ({ children }) => {
   }, [addToCart]);
 
   return (
-    <DataContext.Provider value={{ data, cart, setCart, addToCart, updateFromCart, deleteFromCart, storage}}>
+    <DataContext.Provider value={{ data, cart, setCart, addToCart, updateFromCart, deleteFromCart, storage }}>
       {children}
     </DataContext.Provider>
   );
