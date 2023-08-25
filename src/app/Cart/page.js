@@ -6,11 +6,12 @@ import { CartCounter } from "../components/atoms/atoms/atoms/CartCounter";
 import ButtonSmall from "../components/atoms/atoms/atoms/ButtonSmall";
 import Modal from "../components/atoms/atoms/atoms/Modal";
 import { Loader } from "../components/atoms/atoms/atoms/Loader";
+import { useRouter } from "next/navigation";
 // import './CartElements.css'
 // import { CartItemCounter } from "./CartItemCounter";
 
 const CartElements = () => {
-  const { data, cart, setCart, deleteFromCart, storage } = useContext(DataContext);
+  const { data, cart, setCart, deleteFromCart, storage, clearCart} = useContext(DataContext);
   const [modalUno, setModalUno] = useState(false);
 
   const deleteProduct = (id) => {
@@ -22,6 +23,12 @@ const CartElements = () => {
     setCart(newCart);
   };
 
+  const router = useRouter();
+
+  const handleConfirm = () => {
+    router.push('/')
+  }
+
   const allProductsPrice = () => {
     cart.map();
   };
@@ -29,6 +36,8 @@ const CartElements = () => {
   const handlerBtn = () => {
     setModalUno(true)
   }
+
+  
   return (
     <div className={styles.cartWrapper}>
       {!cart && <Loader/>}
@@ -58,7 +67,7 @@ const CartElements = () => {
           <h4 className={styles.price}>
             U$s {cart.reduce((acc, el) => acc + el.price * el.quantity, 0)}
           </h4>
-          <ButtonSmall texto={"Proceed to checkout"} width={"220px"} handler={handlerBtn}></ButtonSmall>
+          <ButtonSmall texto={"Proceed"} width={"220px"} handler={handlerBtn}></ButtonSmall>
         </div>
       )}
       {cart.length === 0 && <h1>🛒Your Cart is empty🛒</h1>}
@@ -69,6 +78,8 @@ const CartElements = () => {
         showHeader={true}
         showOverlay={true}
         showCloseBtn={true}
+        textBtn={'Confirm'}
+        handleBtn={handleConfirm}
       >
         <h2>Its almost yours!! </h2>
         <p>Click in CONFIRM to complete your order</p>
