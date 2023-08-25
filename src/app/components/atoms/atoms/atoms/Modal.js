@@ -10,6 +10,8 @@ const Modal = ({
   showHeader,
   showOverlay,
   showCloseBtn,
+  textBtn,
+  handleBtn
 }) => {
   return (
     <>
@@ -27,7 +29,7 @@ const Modal = ({
             )}
 
             <Contenido>{children}</Contenido>
-            <ButtonSmall texto={'Confirm'} width={'150px'}/>
+            <ButtonSmall texto={textBtn} width={'150px'} handler={handleBtn}/>
           </ModalContainer>
         </Overlay>
       )}
