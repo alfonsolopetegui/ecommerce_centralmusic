@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import Header from "./components/atoms/atoms/atoms/Header";
 import { DataContextProvider } from "./Context/DataContext";
+import { Product } from "./components/data/PopularListInfo";
+import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +23,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
         </DataContextProvider>
+        <Footer />
       </body>
     </html>
   );

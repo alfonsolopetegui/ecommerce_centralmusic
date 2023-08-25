@@ -1,0 +1,119 @@
+.masterContainer {
+    position: relative; 
+    bottom: 0px;
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    background-color: #505050;
+    text-align: center;
+
+}
+
+.separatedLine {
+    width: 30%;
+    background-color: white;
+    height: 4px;
+    /* margin-bottom: -10px; */
+    margin-top: 20px;
+    margin-bottom: -10px;
+    align-self: flex-start;
+}
+
+.myAccountContainer{
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 70px;
+   justify-content: space-between;
+}
+
+
+.storeContainer{
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 70px;
+   justify-content: space-between;
+}
+
+.separatedLineStore  {
+    width: 30%;
+    background-color: white;
+    height: 4px;
+    /* margin-bottom: -10px; */
+    margin-top: 20px;
+    margin-bottom: -10px;
+    align-self: flex-start;
+}
+
+.allLogosContainer {
+    margin-right: 120px;
+    margin-top: 90px;
+    
+}
+
+.principalLogosContainer {
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+
+    
+}
+
+.logosContainer {
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+justify-content: space-evenly;
+}
+
+
+@media (max-width: 768px) {
+    .masterContainer {
+        margin-top: 30px; /* Ajustar el margen superior */
+        grid-template-columns: 1fr;
+        height: 290px;
+    }
+
+    .separatedLine {
+        margin-top: 10px; /* Ajustar el margen superior */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+        margin-left: 120px;
+    }
+
+    .myAccountContainer {
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+        margin-left: 20px; /* Ajustar el margen izquierdo */
+        margin-right: 20px; /* Ajustar el margen derecho */
+        align-items: center;
+    }
+
+    .allLogosContainer {
+        margin-top: 20px; /* Ajustar el margen superior */
+        margin-right: 20px; /* Ajustar el margen derecho */
+        margin-left: 20px; /* Ajustar el margen izquierdo */
+    }
+
+    .logosContainer {
+        flex-direction: row; /* Apilar los logos en dispositivos móviles */
+        align-items: center; /* Centrar horizontalmente */
+    }
+    .separatedLineStore {
+        display: none;
+    }
+    .storeContainer {
+        display: none;
+    }
+    .myAccountContent{
+        margin-top: 10px;
+    }
+    .principalLogosContainer {
+        margin-bottom: 10px;
+    }
+} 
