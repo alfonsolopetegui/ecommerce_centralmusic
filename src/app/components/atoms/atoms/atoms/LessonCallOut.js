@@ -1,24 +1,25 @@
-"use client"
-import React from 'react';
+"use client";
+import React from "react";
 import styles from "../../../../../styles/lesson.module.css";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
+import ButtonSmall from "./ButtonSmall";
 
 const info = {
   img: "bgLessonCard.jpg",
   title: "FREE GUITAR LESSONS!",
-  subTitle: "Purchase any guitar over $499.99 and recieve one-hour guitar lesson free.",
+  subTitle:
+    "Purchase any guitar over $499.99 and recieve one-hour guitar lesson free.",
   titleButton: "LEARN MORE",
-}
+};
 
 const LessonCallOut = () => {
-
   const router = useRouter();
 
   const handleBtn = () => {
-    router.push('/LessonsPage')
-  }
-  
-  return(
+    router.push("/LessonsPage");
+  };
+
+  return (
     <div className={styles.container}>
       {/* <img className={styles.backgroundImage}  src={info.img} /> */}
       <div className={styles.textContainer}>
@@ -27,7 +28,8 @@ const LessonCallOut = () => {
           <div className={styles.textSubTitle}> {info.subTitle} </div>
         </div>
       </div>
-      <button id={styles.button} style={{boxShadow:"none !important"}} onClick={handleBtn}> {info.titleButton} </button>
+      <ButtonSmall texto={"LEARN MORE"} handler={handleBtn} width={"200px"} />
     </div>
-)};
+  );
+};
 export default LessonCallOut;

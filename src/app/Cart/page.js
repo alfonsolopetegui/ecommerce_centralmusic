@@ -11,36 +11,25 @@ import { useRouter } from "next/navigation";
 // import { CartItemCounter } from "./CartItemCounter";
 
 const CartElements = () => {
-  const { data, cart, setCart, deleteFromCart, storage, clearCart} = useContext(DataContext);
+  const { data, cart, setCart, deleteFromCart, storage } =
+    useContext(DataContext);
   const [modalUno, setModalUno] = useState(false);
-
-  const deleteProduct = (id) => {
-    const findId = cart.find((element) => element.id === id);
-
-    const newCart = cart.filter((element) => {
-      return element !== findId;
-    });
-    setCart(newCart);
-  };
 
   const router = useRouter();
 
   const handleConfirm = () => {
-    router.push('/')
-  }
-
-  const allProductsPrice = () => {
-    cart.map();
+    // clearCart();
+    setModalUno(false);
+    router.push("/");
   };
 
   const handlerBtn = () => {
-    setModalUno(true)
-  }
+    setModalUno(true);
+  };
 
-  
   return (
     <div className={styles.cartWrapper}>
-      {!cart && <Loader/>}
+      {!cart && <Loader />}
       {cart &&
         cart.map((product) => {
           return (
@@ -67,7 +56,11 @@ const CartElements = () => {
           <h4 className={styles.price}>
             U$s {cart.reduce((acc, el) => acc + el.price * el.quantity, 0)}
           </h4>
-          <ButtonSmall texto={"Proceed"} width={"220px"} handler={handlerBtn}></ButtonSmall>
+          <ButtonSmall
+            texto={"Proceed"}
+            width={"220px"}
+            handler={handlerBtn}
+          ></ButtonSmall>
         </div>
       )}
       {cart.length === 0 && <h1>🛒Your Cart is empty🛒</h1>}
@@ -78,7 +71,7 @@ const CartElements = () => {
         showHeader={true}
         showOverlay={true}
         showCloseBtn={true}
-        textBtn={'Confirm'}
+        textBtn={"Confirm"}
         handleBtn={handleConfirm}
       >
         <h2>Its almost yours!! </h2>

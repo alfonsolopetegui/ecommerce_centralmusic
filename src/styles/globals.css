@@ -242,11 +242,13 @@ a:hover {
   }
   .nav-left {
     width: 100%;
+    /* justify-content: space-between; */
   }
   .navbar_ {
     /* margin: 18px; */
     padding-top: 7px;
-    margin-left: 20px;
+    margin-left: 35px;
+    padding-right: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
