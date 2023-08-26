@@ -119,6 +119,12 @@
     .carrouselConteiner {
       display: none;
       }
+
+      .popularList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       
     }
 

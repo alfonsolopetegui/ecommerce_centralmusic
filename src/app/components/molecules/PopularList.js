@@ -1,10 +1,16 @@
 import React from 'react'
-import PopularCard from '../atoms/atoms/atoms/PopularCard'
 import styles from "../../../styles/carrousel.module.css";
-import { Product } from '../data/PopularListInfo';
+import { useContext } from "react";
+import DataContext from "../../../app/Context/DataContext";
+import axios from "axios";
+import CarrouselCard from '../atoms/atoms/atoms/CarrouselCard';
+
 
 
 const PopularList = () => {
+    const { accesories } = useContext(DataContext);
+
+
     return (
         <>
             <div className={styles.popularListHeader}>
@@ -14,9 +20,9 @@ const PopularList = () => {
             <div className={styles.popularList}>
                 <div className={styles.popularList2}>
                     {
-                        Product.map(Product => <PopularCard
-                            key={Product.id}
-                            data={Product}
+                        accesories .map(accesories => <CarrouselCard
+                            key={accesories.id}
+                            data={accesories }
                         />)
                     }
                 </div>

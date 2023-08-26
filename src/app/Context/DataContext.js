@@ -9,11 +9,13 @@ const cartURL = "http://localhost:5000/cart";
 const storageURL = "http://localhost:5000/storageInfo";
 const accesoriesURL = "http://localhost:5000/accesories";
 
+
 export const DataContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
   const [storage, setStorage] = useState([]);
   const [accesories, setAccesories] = useState([]);
+
 
   const addToCart = async (prod) => {
     const options = {
@@ -77,6 +79,7 @@ export const DataContextProvider = ({ children }) => {
   useEffect(() => {
      axios.get(cartURL).then((res) => setCart(res.data));
   }, [cart]);
+
 
   return (
     <DataContext.Provider

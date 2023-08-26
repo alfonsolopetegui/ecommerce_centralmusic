@@ -1,9 +1,11 @@
 'use client'
 import React from 'react'
 import Slider from "react-slick";
-import PopularCard from '../atoms/atoms/atoms/PopularCard'
 import styles from "../../../styles/carrousel.module.css";
-import { Product } from '../data/PopularListInfo';
+import CarrouselCard from '../atoms/atoms/atoms/CarrouselCard';
+import  {product} from '../../components/data/PopularListInfo';
+import { DataContext } from "../../../app/Context/DataContext";
+import { useContext } from "react";
 
 const settings = {
 
@@ -15,15 +17,17 @@ const settings = {
 
 
 const Carrousel = () => {
+  const { accesories } = useContext(DataContext);
+
   return (
     <div className={styles.carrouselConteiner}>
       <h2 className={styles.carrouselTitle}> Popular Finds </h2>
       <div className={styles.carrousel}>
         <Slider {...settings} className={styles.slider}>
           {
-            Product.map(Product => <PopularCard
-              key={Product.id}
-              data={Product}
+            accesories.map(accesories => <CarrouselCard
+              key={accesories.id}
+              data={accesories}
             />)
           }
         </Slider>

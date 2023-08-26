@@ -8,7 +8,7 @@
 
 .guitarContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1fr);
     gap: 6%;
     /* margin-left: 10%; */
     padding-top: 10px;
@@ -21,6 +21,20 @@
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 33px; 
+}
+
+/********************LAPTOP**************************/
+@media (min-width: 1225px) {
+    .guitarsPageWrapper {
+  
+     }
+  
+    .guitarContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      gap: 90px;
+
+     }    
 }
 
 /* Media query para pantallas aún más pequeñas */
@@ -37,3 +51,4 @@
         margin-bottom: 15px;
     }
 }
+
