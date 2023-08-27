@@ -1,9 +1,10 @@
 import styles from "../../styles/repairsPage.module.css";
+import ButtonSmall from "../components/atoms/atoms/atoms/ButtonSmall";
 
 const LessonsPage = () => {
   return (
     <div className={styles.repairsPageWrapper}>
-      <div className={styles.title}>Lessons</div>
+      <h2 className={styles.title}>Lessons</h2>
 
       <div className={styles.redLine}>
         <svg
@@ -147,7 +148,7 @@ const LessonsPage = () => {
         </div>
       </form>
       <div className={styles.buttonContent}>
-        <button className={styles.button}>SEND REQUEST</button>
+        <ButtonSmall texto={"Send Request"} width={"30%"} />
       </div>
     </div>
 );

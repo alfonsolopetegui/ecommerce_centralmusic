@@ -28,8 +28,19 @@ const Storage = () => {
     <>
       <div className={styles.StoragePageWrapper}>
         <div className={styles.StorageHeader}>
-          <h2 className={styles.storageTitle}> Storage </h2>
+          <h2 className={styles.title}> Storage </h2>
         </div>
+        <div className={styles.redLine}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="58"
+          height="3"
+          viewBox="0 0 58 3"
+          fill="none"
+        >
+          <line y1="1.5" x2="58" y2="1.5" stroke="#AB0433" stroke-width="3" />
+        </svg>
+      </div>
         <div className={styles.storageList}>
           <div className={styles.storageList2}>
             {storage.map((product) => (

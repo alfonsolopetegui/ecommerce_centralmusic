@@ -17,6 +17,9 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 759px){
+    .home-title {
+        margin-bottom: 200px;
+    }
     .home-title > h1 {
         font-size: 3.5rem;
     }

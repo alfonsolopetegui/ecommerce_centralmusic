@@ -10,7 +10,7 @@ body{
 }
 
 @media screen  and (min-width: 375px) and (max-width: 759px){
-  body { overflow-x: hidden;}
+  body,html { overflow-x: hidden !important;}
 
 }
 
