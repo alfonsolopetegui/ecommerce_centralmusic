@@ -7,11 +7,15 @@ export const DataContext = createContext();
 const baseURL = "http://localhost:5000/products";
 const cartURL = "http://localhost:5000/cart";
 const storageURL = "http://localhost:5000/storageInfo";
+const accesoriesURL = "http://localhost:5000/accesories";
+
 
 export const DataContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
   const [storage, setStorage] = useState([]);
+  const [accesories, setAccesories] = useState([]);
+
 
   const addToCart = async (prod) => {
     const options = {
@@ -29,10 +33,10 @@ export const DataContextProvider = ({ children }) => {
       method: "PUT",
       headers: { "content-type": "application/json" },
 
-      
-
-      data: JSON.stringify({ ...prod, quantity: increase ? prod.quantity += 1 : prod.quantity -= 1 }),
-
+      data: JSON.stringify({
+        ...prod,
+        quantity: increase ? (prod.quantity + 1) : (prod.quantity - 1),
+      }),
     };
     await axios(`${cartURL}/${id}`, options);
   };
@@ -47,17 +51,18 @@ export const DataContextProvider = ({ children }) => {
     await axios(`${cartURL}/${id}`, options);
   };
 
-  const clearCart = async () => {
-    
-    const options = {
-      method: "DELETE",
-      headers: { "content-type": "application/json" },
-      
-    };
-    await axios(cartURL, options);
-  };
+  // const clearCart =  () => {
+  //   cart.forEach(element => {
+  //      deleteFromCart(element)
+  //   });
+  // }
 
+  // const clearCart = async () => {
+  //   let cartIds = [];
+  //   cart.forEach((el) => cartIds.push(el.id));
 
+  //   await axios.delete(`${cartURL}/${cartIds}`);
+  // };
 
   useEffect(() => {
     axios.get(baseURL).then((res) => setData(res.data));
@@ -68,16 +73,27 @@ export const DataContextProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    axios.get(cartURL).then((res) => setCart(res.data));
-  }, [addToCart]);
+    axios.get(accesoriesURL).then((res) => setAccesories(res.data));
+  }, []);
+
+  useEffect(() => {
+     axios.get(cartURL).then((res) => setCart(res.data));
+  }, [cart]);
+
 
   return (
-
-    
-    
-
-    <DataContext.Provider value={{ data, cart, setCart, addToCart, updateFromCart, deleteFromCart, storage }}>
-
+    <DataContext.Provider
+      value={{
+        data,
+        cart,
+        setCart,
+        addToCart,
+        updateFromCart,
+        deleteFromCart,
+        storage,
+        accesories,
+      }}
+    >
       {children}
     </DataContext.Provider>
   );

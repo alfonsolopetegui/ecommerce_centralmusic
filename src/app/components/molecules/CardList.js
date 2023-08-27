@@ -1,5 +1,7 @@
 import React from 'react'
 import Card from '../atoms/atoms/atoms/Card'
+import { DataContext } from "../../Context/DataContext";
+import { useContext } from "react";
 
 const Tarjetas = [
 
@@ -30,6 +32,9 @@ const Tarjetas = [
 ]
 
 const CardList = () => {
+
+    const { data } = useContext(DataContext);
+
   return (
     <>
     <div className='card-list-header'> 
@@ -39,9 +44,9 @@ const CardList = () => {
     <div className='card-list'> 
     <div className='card-list-2'>
     {
-        Tarjetas.map(tarjeta => <Card 
-            key={tarjeta.id}
-            data={tarjeta} />)
+        data.map(guitar => <Card 
+            key={guitar.id}
+            data={guitar} />)
     }
     </div>
     </div>
