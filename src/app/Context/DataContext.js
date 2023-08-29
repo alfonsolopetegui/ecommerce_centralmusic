@@ -9,13 +9,12 @@ const cartURL = "http://localhost:5000/cart";
 const storageURL = "http://localhost:5000/storageInfo";
 const accesoriesURL = "http://localhost:5000/accesories";
 
-
 export const DataContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
   const [storage, setStorage] = useState([]);
   const [accesories, setAccesories] = useState([]);
-
+  const [isLoading, setIsLoading] = useState(true);
 
   const addToCart = async (prod) => {
     const options = {
@@ -25,6 +24,7 @@ export const DataContextProvider = ({ children }) => {
     };
 
     await axios(cartURL, options);
+    setIsLoading(true);
   };
 
   const updateFromCart = async (prod, increase) => {
@@ -35,10 +35,12 @@ export const DataContextProvider = ({ children }) => {
 
       data: JSON.stringify({
         ...prod,
-        quantity: increase ? (prod.quantity + 1) : (prod.quantity - 1),
+        quantity: increase ? prod.quantity + 1 : prod.quantity - 1,
       }),
     };
+    console.log(prod.quantity);
     await axios(`${cartURL}/${id}`, options);
+    setIsLoading(true);
   };
 
   const deleteFromCart = async (prod) => {
@@ -49,19 +51,37 @@ export const DataContextProvider = ({ children }) => {
       data: JSON.stringify(prod),
     };
     await axios(`${cartURL}/${id}`, options);
+    setIsLoading(true);
   };
 
-  // const clearCart =  () => {
-  //   cart.forEach(element => {
-  //      deleteFromCart(element)
-  //   });
+  // const clearCart =  async () => {
+  //   try {
+      
+  //     const response = await axios.get('http://localhost:5000/cart');
+  //     const cart = response.data;
+  
+      
+  //     for (const product of cart) {
+  //       await axios.delete(`http://localhost:5000/cart/${product.id}`);
+  //       console.log(`Product ${product.id} deleted`);
+  //     }
+  
+  //     console.log('Cart cleared successfully');
+  //     setIsLoading(true)
+  //   } catch (error) {
+  //     console.error('Error clearing cart:', error);
+  //   }
   // }
 
   // const clearCart = async () => {
-  //   let cartIds = [];
-  //   cart.forEach((el) => cartIds.push(el.id));
+    // const options = {
+    //   method: "DELETE",
+    //   headers: { "content-type": "application/json" },
+    //   data: JSON.stringify([cart]),
+    // };
 
-  //   await axios.delete(`${cartURL}/${cartIds}`);
+  //   await axios.delete(`${cartURL}/`);
+
   // };
 
   useEffect(() => {
@@ -76,10 +96,18 @@ export const DataContextProvider = ({ children }) => {
     axios.get(accesoriesURL).then((res) => setAccesories(res.data));
   }, []);
 
-  useEffect(() => {
-     axios.get(cartURL).then((res) => setCart(res.data));
-  }, [cart]);
+  // useEffect(() => {
+  //    axios.get(cartURL).then((res) => setCart(res.data));
+  // }, [cart]);
 
+  useEffect(() => {
+    if (isLoading) {
+      axios.get(cartURL).then((res) => {
+        setCart(res.data);
+        setIsLoading(false); // Marcar la carga como completada
+      });
+    }
+  }, [isLoading, cart]);
 
   return (
     <DataContext.Provider
@@ -92,6 +120,8 @@ export const DataContextProvider = ({ children }) => {
         deleteFromCart,
         storage,
         accesories,
+        setIsLoading,
+        
       }}
     >
       {children}

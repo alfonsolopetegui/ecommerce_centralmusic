@@ -110,7 +110,7 @@
       "id": 12,
       "img": "polytune.jpg",
       "title": "TC PolyTune Mini",
-      "price": "$300",
+      "price": "300",
       "description": "Tiny polyphonic tuner gives you fast, accurate tuning and a high-quality tone tool in a single unit.",
       "colorsavailable": "2",
       "quantity": 1
@@ -143,5 +143,24 @@
       "quantity": 1
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 11,
+      "img": "fenderdeluxe.jpg",
+      "title": "Fender Caleb Delux",
+      "price": "150",
+      "description": "The Fender Deluxe Cable is a classic, high-quality instrument cable that combines outstanding construction and top-notch materials to deliver a stellar signal reproduction.",
+      "colorsavailable": "2",
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "img": "polytune.jpg",
+      "title": "TC PolyTune Mini",
+      "price": "$300",
+      "description": "Tiny polyphonic tuner gives you fast, accurate tuning and a high-quality tone tool in a single unit.",
+      "colorsavailable": "2",
+      "quantity": 1
+    }
+  ]
 }

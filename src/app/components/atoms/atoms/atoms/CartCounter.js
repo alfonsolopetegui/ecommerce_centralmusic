@@ -7,6 +7,7 @@ export const CartCounter = ({ product }) => {
   const { cart, setCart, updateFromCart, deleteFromCart } = useContext(DataContext);
 
   const increase = () => {
+    console.log(product)
     updateFromCart(product, "increase")
   }
 

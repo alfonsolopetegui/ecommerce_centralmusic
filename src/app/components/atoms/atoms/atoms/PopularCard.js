@@ -13,7 +13,7 @@ const PopularCard = (props) => {
     const productRepeat = cart.find((item) => item.id == product.id);
 
     if (productRepeat) {
-      updateFromCart(product, "increase");
+      updateFromCart(productRepeat, "increase");
     } else {
       addToCart(product);
     }

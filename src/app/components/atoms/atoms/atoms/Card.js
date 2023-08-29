@@ -5,14 +5,13 @@ import { useContext } from "react";
 import DataContext from "@/app/Context/DataContext";
 
 const Card = (props) => {
-  const { cart, addToCart, updateFromCart } =
-    useContext(DataContext);
+  const { cart, addToCart, updateFromCart } = useContext(DataContext);
 
   const addProduct = () => {
     const productRepeat = cart.find((item) => item.id == props.data.id);
-
     if (productRepeat) {
-      updateFromCart(props.data, "increase");
+      console.log(props.data)
+      updateFromCart(productRepeat, "increase");
     } else {
       addToCart(props.data);
     }
