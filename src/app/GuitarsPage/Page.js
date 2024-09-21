@@ -1,4 +1,4 @@
-"use client";
+import React from "react";
 import Card from "../components/atoms/atoms/atoms/Card";
 import styles from "../../styles/guitarsPage.module.css";
 import { GuitarsInfo } from "../components/data/GuitarsInfo";
