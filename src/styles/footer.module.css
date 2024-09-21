@@ -1,119 +1,130 @@
 .masterContainer {
-    position: relative; 
-    bottom: 0px;
-    margin-top: 300px;
-    height: 200px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
-    background-color: #505050;
-    text-align: center;
-
+  /* position: relative;  */
+  /* bottom: 0px; */
+  padding: 20px;
+  /* margin-top: 300px; */
+  height: 200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  background-color: #505050;
+  text-align: center;
 }
 
-.separatedLine {
+/* .separatedLine {
     width: 30%;
     background-color: white;
     height: 4px;
-    /* margin-bottom: -10px; */
     margin-top: 20px;
     margin-bottom: -10px;
     align-self: flex-start;
+} */
+
+.myAccountContainer {
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 70px;
+  justify-content: space-between;
 }
 
-.myAccountContainer{
-    margin-bottom: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    margin-left: 70px;
-   justify-content: space-between;
+.myAccountContainer p:hover {
+    color: #a9a3a3;
+    cursor: pointer;
 }
 
-
-.storeContainer{
-    margin-bottom: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    margin-left: 70px;
-   justify-content: space-between;
+.storeContainer {
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 70px;
+  justify-content: space-between;
+  transition: all .3 ease;
 }
 
-.separatedLineStore  {
+.storeContainer p:hover {
+    color: #a9a3a3;
+    cursor: pointer;
+}
+
+/* .separatedLineStore  {
     width: 30%;
     background-color: white;
     height: 4px;
-    /* margin-bottom: -10px; */
     margin-top: 20px;
     margin-bottom: -10px;
     align-self: flex-start;
-}
+} */
 
 .allLogosContainer {
-    margin-right: 120px;
-    margin-top: 90px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .principalLogosContainer {
-display: flex;
-flex-wrap: nowrap;
-flex-direction: column;
-
-    
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .logosContainer {
-display: flex;
-flex-direction: row;
-align-items: flex-end;
-justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin-top: 10px;
 }
 
+.logosContainer img:hover {
+    scale: 110%;
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
-    .masterContainer {
-        margin-top: 30px; /* Ajustar el margen superior */
-        grid-template-columns: 1fr;
-        height: 290px;
-    }
+  .masterContainer {
+    margin-top: 30px; /* Ajustar el margen superior */
+    grid-template-columns: 1fr;
+    height: 290px;
+  }
 
-    .separatedLine {
-        margin-top: 10px; /* Ajustar el margen superior */
-        margin-bottom: 10px; /* Ajustar el margen inferior */
-        margin-left: 120px;
-    }
+  .separatedLine {
+    margin-top: 10px; /* Ajustar el margen superior */
+    margin-bottom: 10px; /* Ajustar el margen inferior */
+    margin-left: 120px;
+  }
 
-    .myAccountContainer {
-        margin-bottom: 10px; /* Ajustar el margen inferior */
-        margin-left: 20px; /* Ajustar el margen izquierdo */
-        margin-right: 20px; /* Ajustar el margen derecho */
-        align-items: center;
-    }
+  .myAccountContainer {
+    margin-bottom: 10px; /* Ajustar el margen inferior */
+    margin-left: 20px; /* Ajustar el margen izquierdo */
+    margin-right: 20px; /* Ajustar el margen derecho */
+    align-items: center;
+  }
 
-    .allLogosContainer {
-        margin-top: 20px; /* Ajustar el margen superior */
-        margin-right: 20px; /* Ajustar el margen derecho */
-        margin-left: 20px; /* Ajustar el margen izquierdo */
-    }
+  .allLogosContainer {
+    margin-top: 20px; /* Ajustar el margen superior */
+    margin-right: 20px; /* Ajustar el margen derecho */
+    margin-left: 20px; /* Ajustar el margen izquierdo */
+  }
 
-    .logosContainer {
-        flex-direction: row; /* Apilar los logos en dispositivos móviles */
-        align-items: center; /* Centrar horizontalmente */
-    }
-    .separatedLineStore {
-        display: none;
-    }
-    .storeContainer {
-        display: none;
-    }
-    .myAccountContent{
-        margin-top: 10px;
-    }
-    .principalLogosContainer {
-        margin-bottom: 10px;
-    }
-} 
+  .logosContainer {
+    flex-direction: row; /* Apilar los logos en dispositivos móviles */
+    align-items: center; /* Centrar horizontalmente */
+  }
+  .separatedLineStore {
+    display: none;
+  }
+  .storeContainer {
+    display: none;
+  }
+  .myAccountContent {
+    margin-top: 10px;
+  }
+  .principalLogosContainer {
+    margin-bottom: 10px;
+  }
+}

@@ -2,6 +2,8 @@
 
 /******* Gallery ********/
 .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -53,6 +55,7 @@
   min-width: 327px;
   height: 433px;
   border-radius: 10px;
+  box-shadow: 0 0 15px #ddd;
 }
 
 .imgContainer {

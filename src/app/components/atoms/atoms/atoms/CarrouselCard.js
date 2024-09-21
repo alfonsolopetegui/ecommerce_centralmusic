@@ -1,38 +1,47 @@
-
-import React from 'react'
-import ButtonSmall from './ButtonSmall'
-import { useContext } from "react";
-import DataContext from "@/app/Context/DataContext";
-import styles from '../../../../../styles/popularCard.module.css'
-import Carrousel from '@/app/components/molecules/Carrousel';
+"use client";
+import React from "react";
+import ButtonSmall from "./ButtonSmall";
+import styles from "../../../../../styles/popularCard.module.css";
+import useStore from "@/store/cartStore";
 
 const CarrouselCard = (props) => {
-  const { cart, addToCart, updateFromCart } =
-  useContext(DataContext);
+  const { addToCart, cart, updateFromCart } = useStore();
 
-const addProduct = () => {
-  const productRepeat = cart.find((item) => item.id == props.data.id);
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+    }).format(price);
+  };
 
-  if (productRepeat) {
-    updateFromCart(props.data, "increase");
-  } else {
-    addToCart(props.data);
-  }
-};
+  const addProduct = () => {
+    const productRepeat = cart.find((item) => item.id == props.data.id);
+    if (productRepeat) {
+      updateFromCart(productRepeat, "increase");
+    } else {
+      const newProduct = props.data;
+      const addedProduct = { ...newProduct, quantity: 1 };
+      addToCart(addedProduct);
+    }
+  };
 
   return (
     <figure className={styles.popularCardConteiner}>
-      <img className={styles.popularImg} src={props.data.img} alt='product image' />
-      <div className={styles.popularTitleConteiner} >
+      <img
+        className={styles.popularImg}
+        src={props.data.img}
+        alt="product image"
+      />
+      <div className={styles.popularTitleConteiner}>
         <h3 className={styles.popularTitle}>{props.data.title}</h3>
-        <h3 className={styles.popularPrice}>${props.data.price} </h3>
+        <h3 className={styles.popularPrice}>{formatPrice(props.data.price)}</h3>
       </div>
       <p className={styles.popularDescription}>{props.data.description}</p>
       <div className={styles.buttonConteiner}>
-      <ButtonSmall texto={"Add to Cart"} handler={addProduct}/>  
+        <ButtonSmall texto={"Add to Cart"} handler={addProduct} />
       </div>
     </figure>
-  )
-}
+  );
+};
 
-export default CarrouselCard 
+export default CarrouselCard;

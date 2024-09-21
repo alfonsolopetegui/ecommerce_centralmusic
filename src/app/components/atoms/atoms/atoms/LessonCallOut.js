@@ -21,7 +21,6 @@ const LessonCallOut = () => {
 
   return (
     <div className={styles.container}>
-      {/* <img className={styles.backgroundImage}  src={info.img} /> */}
       <div className={styles.textContainer}>
         <div className={styles.textSubContainer}>
           <div className={styles.textTitle}> {info.title} </div>

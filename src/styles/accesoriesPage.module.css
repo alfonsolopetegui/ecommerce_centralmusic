@@ -1,66 +1,84 @@
+.accesoriesWrapper {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
 .accesoriesList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .accesoriesList2 {
-    display: grid;
-    grid-template-columns: 1fr;  
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .accesoriesPageTitle {
-    color:#505050;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 33px;
+  color: #505050;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 33px;
 }
 
-.accesoriesHeader{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 95px;
-    padding-bottom: 1%;
+.accesoriesHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+  padding-bottom: 1%;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    color: var(--505050, #505050);
-    text-align: center;
-    color: #505050;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 32px;
-  }
-  .redLine {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    margin-bottom: 20px;  }
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: var(--505050, #505050);
+  text-align: center;
+  color: #505050;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+}
 
+.title::after {
+  content: "";
+  background-color: #ab0433;
+  position: absolute;
+  left: 0;
+  top: -25%;
+  width: 35%;
+  height: 3.5px;
+  left: 33%;
+}
+
+.redLine {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
 
 /********************LAPTOP**************************/
 @media (min-width: 1225px) {
- .accesoriesList {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-     }
-  
-     .accesoriesList2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr ;
-      gap: 90px;
-     }    
+  .accesoriesList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .accesoriesList2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px;
+  }
 }

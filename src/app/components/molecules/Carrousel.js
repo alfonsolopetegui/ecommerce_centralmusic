@@ -3,12 +3,11 @@ import React from 'react'
 import Slider from "react-slick";
 import styles from "../../../styles/carrousel.module.css";
 import CarrouselCard from '../atoms/atoms/atoms/CarrouselCard';
-import  {product} from '../../components/data/PopularListInfo';
-import { DataContext } from "../../../app/Context/DataContext";
-import { useContext } from "react";
+
+
+import { PopularFindsData } from '../../components/data/PopularListInfo';
 
 const settings = {
-
   infinite: true,
   speed: 500,
   slidesToShow: 3,
@@ -17,7 +16,6 @@ const settings = {
 
 
 const Carrousel = () => {
-  const { accesories } = useContext(DataContext);
 
   return (
     <div className={styles.carrouselConteiner}>
@@ -25,7 +23,7 @@ const Carrousel = () => {
       <div className={styles.carrousel}>
         <Slider {...settings} className={styles.slider}>
           {
-            accesories.map(accesories => <CarrouselCard
+            PopularFindsData.map(accesories => <CarrouselCard
               key={accesories.id}
               data={accesories}
             />)

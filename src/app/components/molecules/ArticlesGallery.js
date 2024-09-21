@@ -7,7 +7,7 @@ const ArticlesGallery = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.galleryContainer}>
-      <h1 className={styles.galleryTitle}>Gear Heads</h1>
+        <h1 className={styles.galleryTitle}>Gear Heads</h1>
         <div className={styles.articleContainerOne}>
           {ArticlesInfo.map((article, index) => {
             return <Article key={index} data={article} order={index} />;

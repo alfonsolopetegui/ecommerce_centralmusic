@@ -1,21 +1,31 @@
-"use client"
+"use client";
 import styles from "../../../../../styles/popularCard.module.css";
-import { useContext } from "react";
-import DataContext from "@/app/Context/DataContext";
 import ButtonSmall from "./ButtonSmall";
+import useStore from "@/store/cartStore";
 
 const PopularCard = (props) => {
-  const { cart, addToCart, updateFromCart } = useContext(DataContext);
+
   const { data } = props;
   const product = data;
 
-  const addProduct = () => {
-    const productRepeat = cart.find((item) => item.id == product.id);
+  const { addToCart, cart, updateFromCart } = useStore();
 
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    }).format(price);
+  };
+  
+
+  const addProduct = () => {
+    const productRepeat = cart.find((item) => item.id == props.data.id);
     if (productRepeat) {
       updateFromCart(productRepeat, "increase");
     } else {
-      addToCart(product);
+      const newProduct = props.data;
+      const addedProduct = { ...newProduct, quantity: 1 };
+      addToCart(addedProduct);
     }
   };
 
@@ -28,7 +38,7 @@ const PopularCard = (props) => {
       />
       <div className={styles.popularTitleConteiner}>
         <h3 className={styles.popularTitle}>{props.data.title}</h3>
-        <h3 className={styles.popularPrice}>${props.data.price} </h3>
+        <h3 className={styles.popularPrice}>{formatPrice(props.data.price)} </h3>
       </div>
       <p className={styles.popularDescription}>{props.data.description}</p>
       <div className={styles.buttonConteiner}>

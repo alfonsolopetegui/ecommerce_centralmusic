@@ -1,4 +1,3 @@
-"use client";
 import styles from "../styles/page.module.css";
 import CardList from "./components/molecules/CardList";
 import LessonCallOut from "./components/atoms/atoms/atoms/LessonCallOut";
@@ -44,7 +43,7 @@ export default function Index() {
     <>
       <Home />
       <div className={styles.lessonContainer}>
-        {/* <LessonCallOut /> */}
+        <LessonCallOut />
       </div>
       <div className={styles.cardListContainer}>
         <CardList />
