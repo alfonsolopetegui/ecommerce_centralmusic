@@ -1,14 +1,16 @@
 "use client";
 import ButtonSmall from "@/app/components/atoms/atoms/atoms/ButtonSmall";
 import styles from "../../../styles/productView.module.css";
-import { useContext } from "react";
-import DataContext from "@/app/Context/DataContext";
+
+import useStore from "@/store/cartStore";
 
 const GuitarView = ({ params }) => {
-  const { data, cart, setCart, addToCart, updateFromCart } = useContext(DataContext);
+  
   const { id } = params;
 
   const guitar = data[id - 1];
+
+  const {cart, updateFromCart, addToCart} = useStore();
 
   const addProduct = () => {
     const productRepeat = cart.find((item) => item.id === guitar.id);
