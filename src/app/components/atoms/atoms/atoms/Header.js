@@ -1,13 +1,10 @@
 "use client";
 import React, { useState } from "react";
-
 import Link from "next/link";
 import { TotalItems } from "./TotalItems";
-
 import useStore from "@/store/cartStore";
 
 const Header = () => {
-  // const { cart } = useContext(DataContext);
 
   const { cart } = useStore();
 
@@ -27,7 +24,7 @@ const Header = () => {
 
           <nav className="navbar_">
             <div className={`navbar_Links ${isOpen && "open"}`}>
-              <Link href="/GuitarsPage" onClick={handleLink}>
+              <Link href="/Guitars" onClick={handleLink}>
                 Guitars
               </Link>
 
@@ -39,7 +36,7 @@ const Header = () => {
                 Storage
               </Link>
 
-              <Link href="LessonsPage" onClick={handleLink}>
+              <Link href="/LessonsPage" onClick={handleLink}>
                 Lessons
               </Link>
             </div>

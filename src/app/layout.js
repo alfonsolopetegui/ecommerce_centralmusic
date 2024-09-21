@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <title>Proyecto React</title>
+        <title>Central Music</title>
       </head>
       <body className={inter.className}>
         <div className="big-wrapper">
