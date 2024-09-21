@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
+
 import Link from "next/link";
 import { TotalItems } from "./TotalItems";
 
 import useStore from "@/store/cartStore";
 
 const Header = () => {
+  // const { cart } = useContext(DataContext);
 
   const { cart } = useStore();
 
