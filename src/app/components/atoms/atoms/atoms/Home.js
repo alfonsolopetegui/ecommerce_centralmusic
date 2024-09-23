@@ -11,6 +11,8 @@ const Home = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
+
+      className={styles.homeContainer}
     >
       <div className={styles["home-title"]}>
         <h1>

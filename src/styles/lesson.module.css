@@ -1,5 +1,7 @@
 /******* LESSON CALL OUT STRUCTURE ******************/
 .container{
+  width: 70%;
+  padding: 50px;
   /* position: relative; */
   display: flex;
   /* padding: 32px; */
@@ -8,14 +10,13 @@
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   /* gap: 16px; */
   border-radius: 10px;
   background-image: linear-gradient(rgba(171, 4, 51, 0.943), rgba(171, 4, 51, 0.979));
   background-blend-mode: darken, normal;
   /* margin-top: 600px; */
 }
-
 
 .backgroundImage{
   position: absolute;
@@ -72,26 +73,13 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 375px) and (max-width: 759px)
-{
-  .container {  margin-top: 800px;
-  }
-
-}
-
 /******* MOBILE ********/
-@media only screen and (min-width: 375px) and (max-width: 759px){
+@media only screen and (max-width: 375px){
   .container{
-    width: 328px;
-    height: 168px;
+    width: 90%;
+    padding: 15px;
   }
-  .backgroundImage{
-    width: 328px;
-    height: 168px;
-  }
-  .textContainer{
-    width: 226px;
-  }
+ 
   .textSubContainer{
     align-self: stretch;
   }
@@ -109,16 +97,20 @@
 }
 
 
+@media only screen and (max-width: 750px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+
 /********************LAPTOP**************************/
 @media only screen and (min-width: 1225px)  {
   .container{
-    width: 1264px;
-    height: 280px;
     box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(28, 5, 77, 0.10);
   }
   .backgroundImage{
-    width: 1264px;
-    height: 280px;
+
     box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(28, 5, 77, 0.10);
   }
   .textContainer {

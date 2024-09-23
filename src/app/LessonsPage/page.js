@@ -137,7 +137,7 @@ const LessonsPage = () => {
         </div>
       </form>
       <div className={styles.buttonContent}>
-        <ButtonSmall texto={"Send Request"} width={"30%"} />
+        <ButtonSmall texto={"Send Request"} width={"fit-content"} />
       </div>
     </div>
   );

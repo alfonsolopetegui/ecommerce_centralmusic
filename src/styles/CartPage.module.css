@@ -106,16 +106,25 @@
 @media (max-width: 800px) {
   .cartContent {
     grid-template-columns: 4fr 1fr 3fr 1fr;
-    /* align-items: center;
-    height: 70px;
-    border: solid 1px grey; */
-    /* padding: 10px 0; */
     width: 95%;
     padding: 0 5px;
   }
 
   .cartContent img {
     display: none;
+  }
+
+  .emptyCart {
+    text-align: center;
+  }
+
+  .emptyCart img {
+    width: 200px;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+    align-items: center;
   }
 
   .counterContainer {

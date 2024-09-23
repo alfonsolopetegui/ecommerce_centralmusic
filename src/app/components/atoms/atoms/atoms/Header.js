@@ -5,7 +5,6 @@ import { TotalItems } from "./TotalItems";
 import useStore from "@/store/cartStore";
 
 const Header = () => {
-
   const { cart } = useStore();
 
   const [isOpen, setIsOpen] = useState(false);

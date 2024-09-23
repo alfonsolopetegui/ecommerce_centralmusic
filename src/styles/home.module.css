@@ -1,10 +1,14 @@
 /*****Home****/
+.homeContainer {
+    overflow-x: hidden;
+}
 
 .home-title {
+    overflow-x: hidden;
     position:absolute;
     top: 30%;
     left: 10%;
-    width: 100%;
+    width: 90%;
 }
 .home-title > h1 {
     color: white;
@@ -16,12 +20,12 @@
     font-size: 5rem;
 }
 
-@media screen and (min-width: 375px) and (max-width: 759px){
+@media screen and (max-width: 375px){
     .home-title {
         margin-bottom: 200px;
     }
     .home-title > h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .home-title > h1 >span{

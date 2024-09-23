@@ -42,6 +42,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  padding: 5px;
   
 }
 .subtexto {
@@ -57,6 +58,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  padding: 5px;
 }
 .form {
   display: flex;
@@ -201,6 +203,7 @@
 }
 .repairsPage
 .button {
+  width: fit-content;
   background-color: #FF753A;
   color: #fff;
   text-align: center;
@@ -209,7 +212,7 @@
 }
 
 /******* MOBILE ********/
-@media only screen and (min-width: 375px) and (max-width: 759px) {
+@media only screen and (min-width: 200px) and (max-width: 800px) {
   .repairsPageWrapper {
     padding-top: 27%;
   }
@@ -226,13 +229,13 @@
     margin-top: 17px;
   }
   .texto {
-    width: 310px;
-    height: 165px;
-    font-size: 32px;
+    /* width: 310px;
+    height: 165px; */
+    font-size: 20px;
   }
   .subtexto {
-    width: 296px;
-    height: 54px;
+    /* width: 296px;
+    height: 54px; */
 
     font-size: 16px;
   }
@@ -284,7 +287,7 @@
   .contactTitle {
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
     width: 295px;
     height: 24px;
     letter-spacing: 0em;
@@ -292,7 +295,7 @@
   .contactSubtitle {
     font-size: 12px;
     font-weight: 300;
-    line-height: 16px; /* 133.333% */
+    line-height: 16px; 
     width: 295px;
     height: 16px;
     letter-spacing: 0em;
@@ -317,7 +320,7 @@
   .file1Title {
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px; /* 100% */
+    line-height: 20px; 
     width: 295px;
     height: 60px;
     letter-spacing: 0em;
@@ -352,7 +355,7 @@
 
 
 /******* NOTEBOOK ********/
-@media only screen and (min-width: 1225px){
+@media only screen and (min-width: 800px){
   .title{
     font-size: 33px;
   }
@@ -385,7 +388,7 @@
   .contactTitle{
     font-size: 26px;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
     letter-spacing: 0em;
     height: 32px;
   }
@@ -402,7 +405,7 @@
   .file1Title{
     font-size: 21px;
     font-weight: 600;
-    line-height: 21px; /* 100% */
+    line-height: 21px; 
     letter-spacing: 0em;
   }
   .inputContent2{
@@ -419,7 +422,7 @@
     font-size: 20px;
     flex-shrink: 0;
     font-weight: 600;
-    line-height: 130%; /* 23.4px */
+    line-height: 130%; 
     gap: 10px;
     margin-bottom: 32px;
   }

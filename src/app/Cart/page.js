@@ -76,6 +76,7 @@ const CartElements = () => {
             display: "flex",
             justifyContent: "space-around",
           }}
+          className={styles.btnContainer}
         >
           <ButtonSmall
             texto={"Checkout"}
