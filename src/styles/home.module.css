@@ -20,6 +20,16 @@
     font-size: 5rem;
 }
 
+@media screen and (max-width: 750px) {
+    .home-title > h1 {
+        font-size: 3rem;
+    }
+
+    .home-title > h1 >span{
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width: 375px){
     .home-title {
         margin-bottom: 200px;

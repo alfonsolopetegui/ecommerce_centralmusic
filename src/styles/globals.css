@@ -114,11 +114,15 @@ a:hover {
     width: 100%;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 3fr 2fr;
   }
   .nav-left {
     width: 100%; 
     justify-content: space-between;
+  }
+
+  .nav-icons {
+    justify-content: flex-end;
   }
   .navbar_ {
     /* margin: 18px; */
